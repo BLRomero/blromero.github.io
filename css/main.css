@@ -16,7 +16,9 @@ header, footer{
   padding: 1.5rem;
   border-radius: 15px;
 }
-
+main h2 {
+  text-align: center;
+}
 img {
   float: right;
   margin: 10px;
