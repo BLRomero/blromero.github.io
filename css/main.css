@@ -1,24 +1,30 @@
-body{
+body {
   font-size: 18px;
   line-height: 1.5;
   background-color: grey;
 }
 
-header, nav, main, footer{
+header,
+nav,
+main,
+footer {
   margin: 1.25rem auto;
   max-width: 760px;
 }
 
-header, footer{
+header,
+footer {
   text-align: center;
   background-color: #ffe8d6;
   color: #000;
   padding: 1.5rem;
   border-radius: 15px;
 }
+
 main h2 {
   text-align: center;
 }
+
 img {
   float: right;
   margin: 10px;
@@ -27,5 +33,3 @@ img {
   box-shadow: 7px 7px 5px black;
 
 }
-
-
