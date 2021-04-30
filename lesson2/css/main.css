@@ -10,6 +10,9 @@ main {
   display: grid;
   grid-template-columns: 1fr;
 }
+body {
+  padding: 50px;
+}
 
 }
 /* tablet viewer */
@@ -23,6 +26,9 @@ h2{
 main {
   display: grid;
   grid-template-columns: 1fr 1fr ;
+}
+body {
+  padding: 100px;
 }
 
 
