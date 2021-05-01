@@ -1,18 +1,16 @@
 /* smartphone viewer */
 @media only screen and (min-width: 32.5em){
 h1 {
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
-body {
-  padding: 50px;
-}
+
 
 }
 /* tablet viewer */
@@ -21,15 +19,13 @@ h1 {
   font-size: 2.5rem;
 }
 h2{
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 main {
   display: grid;
   grid-template-columns: 1fr 1fr ;
 }
-body {
-  padding: 100px;
-}
+
 
 
   
@@ -47,23 +43,23 @@ body {
 
 }
 header h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 header h2{
   font-size: 2.5rem;
-  padding-bottom: 10px;
+
 }
-h2, h3, a href {
+h2, h3 {
   text-align: center;
 }
-
-  body {
+body {
     font-family: "open sans", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     background-color: #caf0f7;
     text-align: left;
-    padding: 150px;
+    
+   
   }
   header{
     font-size: 4rem;
@@ -74,29 +70,20 @@ h2, h3, a href {
   header, footer {
      background-color: #0077b6;
      text-align: center;
-     padding: 25px;
      border-radius: 25px;
   }
 
   footer {
     font-size: 2rem;
+    padding: 15px;
+    
   }
   section {
      padding: 10px;
             
   }
 
-  img {
-    float: inherit;
-  }
-  /* section #hickslaw{
-
-  }
-  section #ruleofthirds{
   
-  }
-  section #repetition{
   
-  } */
   
   
