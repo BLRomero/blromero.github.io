@@ -1,0 +1,34 @@
+
+@media only screen and (min_width: 37.5em){
+  
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: auto;
+  gap: .75rem;
+ 
+  
+}
+
+section.purpose {
+
+  border: 2px solid #000;
+
+}
+section.purpose h2{
+  text-align: center;
+}
+
+section.domain {
+  text-align: center;
+  
+  border: 2px solid #000;
+
+}
+section.logo{
+  text-align: center;
+  
+  border: 2px solid #000;
+}
+}
