@@ -1,7 +1,13 @@
 
 @media only screen and (min_width: 37.5em){
-  
-}
+  header,
+  nav,
+  main,
+  footer {
+    margin: 1em auto;
+    max-width: 760px;
+  } 
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr ;
@@ -10,25 +16,38 @@ main {
  
   
 }
+section{
+  grid-row-gap: 25px;
+}
 
 section.purpose {
+  grid-column: span 2;
+  grid-row: 1;
+ }
+ section.domain {
+   grid-column: span 2;
+   grid-row: 2;
+  }
+  section.logo {
+    grid-column: span 2;
+    grid-row: 3
+  }
+  section.primarySecondary{
+    border: 2px solid #000;
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  section.details {
+    text-align: center;
+    border: 2px solid #000;
+    grid-column: span 2;
+    grid-row: 2;
+  }
+  section.typo img {
+    max-width: 37.5em;
+    }
 
-  border: 2px solid #000;
 
-}
-section.purpose h2{
-  text-align: center;
-}
 
-section.domain {
-  text-align: center;
-  
-  border: 2px solid #000;
 
-}
-section.logo{
-  text-align: center;
-  
-  border: 2px solid #000;
-}
 }

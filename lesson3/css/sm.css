@@ -12,7 +12,7 @@ nav,
 main,
 footer {
   margin: 1em auto;
-  max-width: 760px;
+  max-width: 37.5em;
 }
 nav {
   background-color: #A8DADC;
@@ -59,6 +59,12 @@ h1 {
 h2 {
   font-family: "Poppins Medium" sans-serif;
   font-size:25px;
+  
+}
+h3 {
+  font-family: "Poppins Medium" sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 img {
@@ -68,6 +74,53 @@ img {
 
   
 }
+section {
+  /* display: flex;
+  flex-wrap: wrap; */
+  text-align: center;
+  
+}
+section.purpose h2{
+  text-align: center;
+}
+section.purpose {
+  border: 2px solid #000;
+  grid-column: span 1;
+  grid-row: 1;
+}
+section.domain {
+  text-align: center;
+  border: 2px solid #000;
+  grid-column: span 1;
+  grid-row: 2;
+}
+section.logo {
+  text-align: center;
+  border: 2px solid #000;
+  grid-column: span 1;
+  grid-row: 3;
+}
+section.primarySecondary{
+  border: 2px solid #000;
+  grid-column: span 1;
+  grid-row: 1;
+}
+section.details {
+  text-align: center;
+  border: 2px solid #000;
+  grid-column: span 1;
+  grid-row: 2;
+}
+section.details img {
+  max-width: 150px;
+}
+section.typo img {
+max-width: 32.5em;
+align-items: center;
+}
+
+
+
 
 
 }
