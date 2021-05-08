@@ -5,14 +5,6 @@
     line-height: 1.5;
     background-color: #f1faee;
   }
-  main {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: auto;
-    gap: .75rem;
-
-
-  }
   header,
   nav,
   main,
@@ -20,7 +12,14 @@
     margin: 1em auto;
     max-width: 37.5em;
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    gap: .75rem;
 
+
+ 
   nav {
     background-color: #A8DADC;
     font-size: 16px;
@@ -106,7 +105,6 @@
   .scenarios {
     border: 2px solid #000;
     text-align: center;
-
   }
 
   .purpose {
