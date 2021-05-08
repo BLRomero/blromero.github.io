@@ -5,7 +5,14 @@
     line-height: 1.5;
     background-color: #f1faee;
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    gap: .75rem;
 
+
+  }
   header,
   nav,
   main,
@@ -83,74 +90,53 @@
 
   }
 
-  section {
-    /* display: flex;
-  flex-wrap: wrap; */
-    text-align: center;
-
-  }
-
   section.purpose h2 {
     text-align: center;
   }
 
-  section.purpose {
+  .purpose,
+  .domain,
+  .logo,
+  .primarySecondary,
+  .details,
+  .details img,
+  .description,
+  .personas1,
+  .personas2,
+  .scenarios {
     border: 2px solid #000;
+    text-align: center;
+
+  }
+
+  .purpose {
     grid-column: span 1;
     grid-row: 1;
   }
 
-  section.domain {
-    text-align: center;
-    border: 2px solid #000;
+  .domain {
     grid-column: span 1;
     grid-row: 2;
   }
 
-  section.logo {
-    text-align: center;
-    border: 2px solid #000;
+  .logo {
     grid-column: span 1;
     grid-row: 3;
   }
 
-  section.primarySecondary {
-    border: 2px solid #000;
+  .primarySecondary {
     grid-column: span 1;
     grid-row: 1;
   }
 
-  section.details {
-    text-align: center;
-    border: 2px solid #000;
+  .details {
     grid-column: span 1;
     grid-row: 2;
   }
 
-  section.details img {
-    text-align: center;
-    border: 2px solid #000;
+  .details img {
     max-width: 150px;
   }
 
 
-  section.description {
-    text-align: center;
-    border: 2px solid #000;
-  }
-
-  section.personas1 {
-    text-align: center;
-    border: 2px solid #000;
-  }
-
-  section.personas2 {
-    text-align: center;
-    border: 2px solid #000;
-  }
-
-  section.scenarios {
-    text-align: center;
-    border: 2px solid #000;
-  }
 }

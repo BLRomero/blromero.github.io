@@ -10,6 +10,14 @@
 
 
   }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: .75rem;
+
+
+  }
 
 
 
@@ -32,15 +40,6 @@
     grid-column: span 1.5;
     grid-row: 1;
   }
-
-
-
-
-
-
-
-
-
 
 
 }
