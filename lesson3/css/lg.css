@@ -4,11 +4,18 @@
   main,
   footer {
     margin: 1em auto;
-    max-width: 960px;
+    max-width: 1000px;
   }
+
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+  }
+
+  .typo img {
+    width: 800px;
+    height: auto;
+    
   }
 
   .domain {
@@ -21,13 +28,33 @@
     grid-row: 2;
   }
 
- .primarySecondary {
+  .primarySecondary {
     grid-column: span 1.5;
     grid-row: 1;
   }
 
- .details {
+  .details {
     grid-column: span 1.5;
     grid-row: 1;
+  }
+
+  .description {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+
+  .personas1 {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+
+  .personas2 {
+    grid-column: span 3;
+    grid-row: 3;
+  }
+
+  .scenarios {
+    grid-column: span 3;
+    grid-row: 4;
   }
 }
