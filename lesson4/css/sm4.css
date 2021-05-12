@@ -1,0 +1,117 @@
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  background-color: honeydew;
+
+}
+
+header,
+nav,
+main,
+footer {
+  margin: auto;
+  max-width: 360px;
+}
+
+header,
+nav,
+footer {
+  background-color: #457b9d;
+  text-decoration: none;
+
+
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 5px;
+
+}
+
+header,
+nav,
+footer {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 25px;
+}
+
+header img {
+  float: left;
+  width: 100px;
+}
+
+nav {
+  background-color: #a8dadc;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: black;
+  float: right;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+nav ul li a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:hover {
+  background-color: #1d3557;
+  color: honeydew
+}
+
+nav ul.hide {
+  display: none;
+}
+
+section.forecast {
+  border: black solid 1px;
+  padding: 20px
+}
+.hero img {
+  display: flex;
+  
+}
+section.forecast h2 {
+  background-color: #a8dadc;
+  font-size: 25px;
+  padding: 25px
+}
+footer {
+  font-size: 20px;
+}
+footer img {
+  width: 360px;
+ display: flex;
+ align-self: center;
+/* justify-content: ; */
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
