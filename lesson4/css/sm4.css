@@ -102,6 +102,9 @@ section.forecast h2 {
 footer {
   font-size: 20px;
 }
+footer a{
+  color:black;
+}
 footer img {
   width: 360px;
  display: flex;
