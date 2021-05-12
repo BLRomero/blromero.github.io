@@ -104,6 +104,11 @@ footer {
 }
 footer a{
   color:black;
+ 
+}
+footer a:hover {
+  background-color: #1d3557;
+  color: honeydew
 }
 footer img {
   width: 360px;
