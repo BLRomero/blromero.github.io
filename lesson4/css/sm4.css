@@ -2,6 +2,7 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   background-color: honeydew;
+  padding: 25px;
 
 }
 
@@ -18,8 +19,6 @@ nav,
 footer {
   background-color: #457b9d;
   text-decoration: none;
-
-
 }
 
 header {
@@ -28,7 +27,6 @@ header {
   font-size: 40px;
   padding: 20px;
   padding-bottom: 5px;
-
 }
 
 header,
@@ -50,9 +48,12 @@ nav {
   background-color: #a8dadc;
   font-family: Poppins, sans-serif;
   font-size: 16px;
+  clear: left;
 }
 
+/* HELP ME HERE */
 nav button {
+  display: block;
   margin: .2rem 2%;
   background-color: transparent;
   border: none;
@@ -62,7 +63,7 @@ nav button {
 }
 
 nav ul {
-  display: block;
+  /* display: block; */
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -82,39 +83,59 @@ nav ul li a:hover {
   color: honeydew
 }
 
-nav ul.hide {
+nav ul li.hide {
   display: none;
+}
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: block;
+}
+
+.responsive li {
+  display: block;
 }
 
 section.forecast {
   border: 1px solid #1d3557;
   padding: 20px
 }
-.hero img {
-  display: flex;
-  
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
 section.forecast h2 {
   background-color: #a8dadc;
   font-size: 25px;
   padding: 25px
 }
+
+/* section.forecast img{
+  align-self: center;
+}*/
 footer {
   font-size: 20px;
 }
-footer a{
-  color:black;
- 
+
+footer a {
+  color: black;
+
 }
+
 footer a:hover {
   background-color: #1d3557;
   color: honeydew
 }
+
 footer img {
   width: 360px;
- display: flex;
- align-self: center;
-/* justify-content: ; */
+  align-self: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

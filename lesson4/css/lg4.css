@@ -31,9 +31,9 @@
     margin: 0;
   }
 
-  nav ul.hide {
+  /* nav ul.hide {
     display: block;
-  }
+  } */
 
   nav ul li {
     flex: 1 1 100%;
@@ -42,6 +42,10 @@
   nav ul li a {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .6rem 1rem;
+  }
+  nav ul li:last-child a {
+    border: none;
+
   }
 
 
