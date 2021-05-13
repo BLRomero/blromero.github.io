@@ -87,7 +87,7 @@ nav ul.hide {
 }
 
 section.forecast {
-  border: black solid 1px;
+  border: 1px solid #1d3557;
   padding: 20px
 }
 .hero img {
