@@ -31,9 +31,10 @@
     margin: 0;
   }
 
-   nav ul li:first-child{
-    visibility: hidden;
-  } 
+  
+  .ham {
+    display: none;
+  }
 
    nav ul li {
     flex: 1 1 100%;
@@ -51,8 +52,5 @@
   .navigation li{
     display: block;
   }
-
-
-
 
 }
