@@ -43,7 +43,7 @@ header img {
   float: left;
   width: 100px;
 }
-
+ 
 nav {
   background-color: #a8dadc;
   font-family: Poppins, sans-serif;
@@ -52,7 +52,7 @@ nav {
 }
 
 /* HELP ME HERE */
-nav button {
+ /* nav button {
   display: block;
   margin: .2rem 2%;
   background-color: transparent;
@@ -60,10 +60,10 @@ nav button {
   font-size: 1.6rem;
   color: black;
   float: right;
-}
+} */
 
 nav ul {
-  /* display: block; */
+  display: block; 
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -82,21 +82,21 @@ nav ul li a:hover {
   background-color: #1d3557;
   color: honeydew
 }
-
+/*
 nav ul li.hide {
-  display: none;
-}
+  display: block;
+}*/
 .navigation li:first-child {
   display: block;
-}
+} */
 
 .navigation li {
-  display: block;
+  display: none;
 }
 
 .responsive li {
   display: block;
-}
+}  
 
 section.forecast {
   border: 1px solid #1d3557;
@@ -116,9 +116,7 @@ section.forecast h2 {
   padding: 25px
 }
 
-/* section.forecast img{
-  align-self: center;
-}*/
+
 footer {
   font-size: 20px;
 }

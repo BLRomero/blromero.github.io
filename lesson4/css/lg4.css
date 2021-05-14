@@ -16,13 +16,13 @@
 
   }
 
-  nav {
+   /* nav {
     margin-top: 10px;
-  }
+  } */
 
-  nav button {
+  /* nav button {
     display: none;
-  }
+  } */
 
   nav ul {
     display: flex;
@@ -32,21 +32,22 @@
   }
 
   /* nav ul.hide {
-    display: block;
+    display: none;
   } */
 
-  nav ul li {
+   nav ul li {
     flex: 1 1 100%;
   }
 
   nav ul li a {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: .6rem 1rem;
+    border-top: none;
   }
   nav ul li:last-child a {
     border: none;
 
-  }
+  } 
 
 
 
