@@ -31,9 +31,9 @@
     margin: 0;
   }
 
-  /* nav ul.hide {
-    display: none;
-  } */
+   nav ul li:first-child{
+    visibility: hidden;
+  } 
 
    nav ul li {
     flex: 1 1 100%;
@@ -48,6 +48,9 @@
     border: none;
 
   } 
+  .navigation li{
+    display: block;
+  }
 
 
 

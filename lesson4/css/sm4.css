@@ -88,7 +88,7 @@ nav ul li.hide {
 }*/
 .navigation li:first-child {
   display: block;
-} */
+} 
 
 .navigation li {
   display: none;
