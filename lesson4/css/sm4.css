@@ -3,7 +3,6 @@ body {
   font-size: 16px;
   background-color: honeydew;
   padding: 25px;
-
 }
 
 header,
@@ -43,7 +42,7 @@ header img {
   float: left;
   width: 100px;
 }
- 
+
 nav {
   background-color: #a8dadc;
   font-family: Poppins, sans-serif;
@@ -52,7 +51,7 @@ nav {
 }
 
 /* HELP ME HERE */
- /* nav button {
+/* nav button {
   display: block;
   margin: .2rem 2%;
   background-color: transparent;
@@ -63,16 +62,15 @@ nav {
 } */
 
 nav ul {
-  display: block; 
+  display: block;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
 nav ul li a {
   display: block;
-  padding: .8rem 2%;
+  padding: 0.8rem 2%;
   text-decoration: none;
   color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -80,15 +78,16 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #1d3557;
-  color: honeydew
+  color: honeydew;
 }
+
 /*
 nav ul li.hide {
   display: block;
 }*/
 .navigation li:first-child {
   display: block;
-} 
+}
 
 .navigation li {
   display: none;
@@ -96,11 +95,40 @@ nav ul li.hide {
 
 .responsive li {
   display: block;
-}  
+}
+
+.herodiv {
+  position: relative;
+  margin: 10px auto;
+  
+  border: 1px solid black;
+  width: 300px;
+}
+
+.hero-ph {
+  margin: 10px auto;
+  width: 100%;
+  height: 300px;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background:radial-gradient(#a8dadc, #457B9d );
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-weight: bold;
+   
+}
+.weathersummarybox {
+  opacity: 50%;
+}
 
 section.forecast {
   border: 1px solid #1d3557;
-  padding: 20px
+ 
+  padding: 20px;
 }
 
 .center {
@@ -113,9 +141,8 @@ section.forecast {
 section.forecast h2 {
   background-color: #a8dadc;
   font-size: 25px;
-  padding: 25px
+  padding: 25px;
 }
-
 
 footer {
   font-size: 20px;
@@ -123,12 +150,11 @@ footer {
 
 footer a {
   color: black;
-
 }
 
 footer a:hover {
   background-color: #1d3557;
-  color: honeydew
+  color: honeydew;
 }
 
 footer img {
