@@ -76,18 +76,19 @@ nav ul li a {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+nav ul li a:visited {
+  background-color: grey;
+}
 nav ul li a:hover {
   background-color: #1d3557;
   color: honeydew;
 }
-.active {
-  background-color:#f1faee;
+nav ul li a:active {
+  background: #e63946;
 }
 
-/*
-nav ul li.hide {
-  display: block;
-}*/
+
+
 .navigation li:first-child {
   display: block;
 }
@@ -105,7 +106,7 @@ nav ul li.hide {
   margin: 10px auto;
   border: 1px solid black;
   width: 300px;
-  height: 225px;
+  height: auto;
 }
 
 .hero-ph {
@@ -128,7 +129,7 @@ nav ul li.hide {
   opacity: 50%;
 } */
 
-section.forecast {
+section.forecast, section.article {
   border: 1px solid #1d3557;
    padding: 20px;
 }
@@ -145,6 +146,12 @@ section.forecast h2 {
   font-size: 25px;
   padding: 25px;
 }
+/* .article {
+   
+ } */
+/* .article img{
+ 
+}  */
 
 footer {
   font-size: 20px;
@@ -162,6 +169,41 @@ footer a:hover {
 footer img {
   width: 360px;
   align-self: center;
+}
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  color: white;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
