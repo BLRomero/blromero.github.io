@@ -5,6 +5,15 @@ body {
   padding: 25px;
 }
 
+div.banner {
+  text-align: center;
+  background: #e63946;
+  max-width: 100%;
+  font-size: 20px;
+  color: #eee;
+
+}
+
 header,
 nav,
 main,
@@ -79,10 +88,12 @@ nav ul li a {
 nav ul li a:visited {
   background-color: grey;
 }
+
 nav ul li a:hover {
   background-color: #1d3557;
   color: honeydew;
 }
+
 nav ul li a:active {
   background: #e63946;
 }
@@ -123,16 +134,17 @@ nav ul li.hide {
   position: absolute;
   top: 0px;
   left: 20px;
-  background:radial-gradient(#a8dadc, #457B9d );
+  background: radial-gradient(#a8dadc, #457B9d);
   border: 1px solid black;
   padding: 10px;
   font-weight: bold;
 }
 
 
-section.forecast, section.article {
+section.forecast,
+section.article {
   border: 1px solid #1d3557;
-   padding: 20px;
+  padding: 20px;
 }
 
 section.forecast h2 {
@@ -140,6 +152,7 @@ section.forecast h2 {
   font-size: 25px;
   padding: 25px;
 }
+
 /* .article {
    
  } */
@@ -164,7 +177,8 @@ footer img {
   width: 360px;
   align-self: center;
 }
-.fa{
+
+.fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -190,14 +204,15 @@ footer img {
   background: #55ACEE;
   color: white;
 }
-.fa-instagram{
+
+.fa-instagram {
   color: white;
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    }
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
