@@ -88,7 +88,10 @@ nav ul li a:active {
 }
 
 
-
+/*
+nav ul li.hide {
+  display: block;
+}*/
 .navigation li:first-child {
   display: block;
 }
@@ -115,31 +118,22 @@ nav ul li a:active {
   height: 100%;
 }
 
+
 .weathersummary {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 20px;
   background:radial-gradient(#a8dadc, #457B9d );
   border: 1px solid black;
-  padding: 0.5rem;
+  padding: 10px;
   font-weight: bold;
-   
 }
-/* .weathersummarybox {
-  opacity: 50%;
-} */
+
 
 section.forecast, section.article {
   border: 1px solid #1d3557;
    padding: 20px;
 }
-
-/* .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} */
 
 section.forecast h2 {
   background-color: #a8dadc;

@@ -3,16 +3,13 @@ const list = document.querySelector("ul");
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 
-// step5
+// step5 annonymous
 button.addEventListener("click", function() {
   let myChapter = input.value;
   input.value = "";
 
-  const listChapter = document;
-
-  // step6a create an li element
-  createElement('li');
-  // const listText = document.createElement('span');
+  const listChapter = document.createElement('li');
+  const listText = document.createElement('span');
 
   // step6b create a delete button
   const listBtn = document.createElement('button');
@@ -23,7 +20,7 @@ button.addEventListener("click", function() {
   listChapter.appendChild(listBtn);
 
   // fix to be a red x step 6d populate the button textContent with an X
-  listBtn.textContent = "Delete";
+  listBtn.textContent = "❌";
 
   // step6e???? append li element with the delete button
 
