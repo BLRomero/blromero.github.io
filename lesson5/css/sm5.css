@@ -156,9 +156,10 @@ section.forecast h2 {
 /* .article {
    
  } */
-/* .article img{
- 
-}  */
+.article img{
+ float: right;
+ width: 50%
+} 
 
 footer {
   font-size: 20px;
