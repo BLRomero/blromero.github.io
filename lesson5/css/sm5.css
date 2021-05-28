@@ -94,9 +94,6 @@ nav ul li a:hover {
   color: honeydew;
 }
 
-nav ul li a:active {
-  background: #e63946;
-}
 
 
 /*
@@ -123,11 +120,12 @@ nav ul li.hide {
   height: auto;
 }
 
-.hero-ph {
+
+/* .hero-ph {
   display: block;
   width: 100%;
   height: 100%;
-}
+} */
 
 
 .weathersummary {
