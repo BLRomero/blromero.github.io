@@ -1,0 +1,235 @@
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  background-color: honeydew;
+  padding: 25px;
+}
+
+div.banner {
+  text-align: center;
+  background: #e63946;
+  max-width: 100%;
+  font-size: 20px;
+  color: #000;
+
+}
+
+header,
+nav,
+main,
+footer {
+  margin: auto;
+  max-width: 360px;
+}
+
+header,
+nav,
+footer {
+  background-color: #457b9d;
+  text-decoration: none;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+header,
+nav,
+footer {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 25px;
+}
+
+header img {
+  float: left;
+  width: 100px;
+}
+
+nav {
+  background-color: #a8dadc;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  clear: left;
+}
+
+/* HELP ME HERE */
+/* nav button {
+  display: block;
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: black;
+  float: right;
+} */
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a:visited {
+  background-color: grey;
+}
+
+nav ul li a:hover {
+  background-color: #1d3557;
+  color: honeydew;
+}
+
+nav ul li a:active {
+  background: #e63946;
+}
+
+
+/*
+nav ul li.hide {
+  display: block;
+}*/
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+/* .heroimg {
+  display:block;
+  position: relative;
+  margin: 10px auto ;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+} */
+.herodiv {
+  position: relative;
+  margin: 10px auto;
+  border: 1px solid black;
+  max-width: 360px;
+  height: auto;
+
+}
+
+.hero-ph {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+.weathersummary {
+
+  background: radial-gradient(#a8dadc, #457B9d);
+  border: 1px solid black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+
+section.forecast,
+section.article {
+  border: 1px solid #1d3557;
+  padding: 20px;
+}
+
+section.forecast h2 {
+  background-color: #a8dadc;
+  font-size: 25px;
+  padding: 25px;
+}
+
+.article h2 {
+  text-align: center;;
+   
+ }
+.article img{
+ width: 100%;
+ padding: 10px;
+} 
+
+footer {
+  font-size: 20px;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  background-color: #1d3557;
+  color: honeydew;
+}
+
+footer img {
+  width: 360px;
+  align-self: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
