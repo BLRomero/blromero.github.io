@@ -99,7 +99,7 @@ nav ul li a:active {
   display: block;
 }
 
-picture {
+div {
   display: grid;
   width: 100%;
   grid-gap: 25px;
