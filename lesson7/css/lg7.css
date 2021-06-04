@@ -49,15 +49,41 @@
   .navigation li {
     display: block;
   }
-  
-div {
+
+
+
+
+  .herodiv {
+    max-width: 960px;
+  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .weathersummary {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    border: 1px solid black;
+    padding: 1rem;
+
+  }
+  .gallery{
     display: grid;
+    grid-auto-flow: dense;
+    width: 100%;
+    grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
   
   }
+  .gallery figure:hover {
+    box-shadow:20px 20px 20px 20px grey;
+  }
 
-
-
-  
 }
