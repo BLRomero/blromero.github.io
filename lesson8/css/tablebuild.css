@@ -43,5 +43,6 @@ tr:nth-child(1) {
 }
 
  tfoot tr td{
+  background: #7fb9c2;
    color: black;
  }
