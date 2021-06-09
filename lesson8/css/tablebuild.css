@@ -1,0 +1,47 @@
+table {
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 10px 10px 15px #628ca6;
+  width:30%;
+}
+
+th {
+  background: #7fb9c2;
+  color: black;
+  font-size: 2em;
+  padding: .5em;
+}
+
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: .5rem;
+}
+
+
+tr:nth-child(odd) {
+  background: #e7ffed;
+}
+
+tr:nth-child(even) {
+  background: #e7f0ed;
+}
+
+tr:nth-child(1) {
+  background: #628ca6;
+ color: white;
+ font-weight: bolder;
+}
+
+
+.goalmet {
+  background: #628cab;
+  color: white;
+}
+
+ tfoot tr td{
+   color: black;
+ }
