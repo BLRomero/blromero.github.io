@@ -59,16 +59,6 @@ nav {
   clear: left;
 }
 
-/* HELP ME HERE */
-/* nav button {
-  display: block;
-  margin: .2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-size: 1.6rem;
-  color: black;
-  float: right;
-} */
 
 nav ul {
   display: block;
@@ -164,17 +154,19 @@ section.forecast h2 {
 }
 
 .article h2 {
-  text-align: center;;
-   
- }
-.article img{
- width: 100%;
- padding: 10px;
-} 
+  text-align: center;
+  ;
+
+}
+
+.article img {
+  width: 100%;
+  padding: 10px;
+}
 
 
 
-.gallery{
+.gallery {
   display: grid;
   width: 100%;
   grid-gap: 25px;
@@ -182,6 +174,7 @@ section.forecast h2 {
   grid-template-rows: auto;
 
 }
+
 /* .gallery  {
   filter:blur(0em);
   transition:filter 2s;
@@ -190,7 +183,7 @@ section.forecast h2 {
   filter:blur(1em);
 } */
 
-
+/* ----------------------FOOTER------------------ */
 
 footer {
   font-size: 20px;
@@ -244,6 +237,82 @@ footer img {
   background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+
+/* ------------STORM CENTER---------------- */
+/* 
+.slider:hover {
+  opacity: 1;
+ 
+} */
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  background: linear-gradient(#a8dadc, #457b9d);
+ 
+}
+form fieldset.storm {
+  background: linear-gradient( #457b9d, #a8dadc);
+}
+
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  background: linear-gradient( #457b9d, #a8dadc, #457b9d);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+form label.info,
+form div {
+  display: block;
+  padding-top: 1rem;
+  /* font-size: .8rem; */
+  
+}
+
+form label.info input,
+form label.info select {
+  display: block;
+  border: dotted 1px #999;
+  border-radius: 5px;
+  padding: .75rem;
+  width: 96%;
+  max-width: 20rem;
+  
+}
+
+
+form label.storm {
+  display: block;
+  padding: .75rem 0;
+
+}
+
+form input.submitBtn {
+  background: linear-gradient( #457b9d, #a8dadc, #457b9d);
+border: none;
+border-radius: 5px;
+padding: .75rem 1.5rem;
+/* margin: 0 0 2rem 2%; */
+width: 96%;
+max-width: 20rem;
+font-weight: bold;
+font-size: 1rem;
+}
+
+form label.info input:required {
+  border-left: red solid 4px;
+}
+form label.info input:required:valid {
+  border-left: green solid 4px;
 }
 
 

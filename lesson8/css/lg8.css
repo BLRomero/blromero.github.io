@@ -52,17 +52,10 @@
 
 
 
-
   .herodiv {
     max-width: 960px;
   }
 
- 
- 
- 
- 
- 
- 
  
   .weathersummary {
     position: absolute;
@@ -85,5 +78,25 @@
   .gallery figure:hover {
     box-shadow:20px 20px 20px 20px grey;
   }
+
+/* STORM CENTER */
+
+form label.storm{
+  padding: .4rem 0;
+}
+
+
+form input.submitBtn {
+ font-size: 1.5rem;
+}
+
+label.storm option:nth-child(1){
+display: none;
+}
+
+.info{
+  max-width: 460px;
+}
+
 
 }
