@@ -1,5 +1,5 @@
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   padding: 25px;
   text-align: center;
   background: #ede0d4;
@@ -16,7 +16,7 @@ footer {
 }
 
 .cards {
-  display: block
+  display: block;
 }
 
 section {
@@ -42,20 +42,16 @@ p {
   font-weight: bold;
 }
 
-
 @media only screen and (min-width: 35em) {
-
-   .cards {
+  .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     grid-template-rows: auto;
   }
-
 }
 
 @media only screen and (min-width: 64rem) {
-
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -66,5 +62,4 @@ p {
   header {
     font-size: 30px;
   }
-
 }
