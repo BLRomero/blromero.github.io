@@ -3,7 +3,6 @@ body {
   padding: 25px;
   text-align: center;
   background: #ede0d4;
-
 }
 
 header,
@@ -14,7 +13,6 @@ footer {
   font-size: 20px;
   margin: auto;
   text-align: center;
-
 }
 
 .cards {
@@ -26,13 +24,11 @@ section {
   border: 1px solid #9c6644;
   align-content: center;
   margin: 5px;
-
 }
 
 section img {
   /* max-width: 1fr; */
   padding: 25px;
-
 }
 
 h2 {
@@ -49,33 +45,24 @@ p {
 
 @media only screen and (min-width: 35em) {
 
-  body {
-    /* max-width: 560px; */
-  }
-
-  .cards {
+   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     grid-template-rows: auto;
-
   }
-  
+
 }
 
 @media only screen and (min-width: 64rem) {
-
-  body {
-    /* max-width: 960px; */
-  }
 
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     width: 100%;
-
   }
+
   header {
     font-size: 30px;
   }
