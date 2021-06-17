@@ -81,15 +81,12 @@ var lastTime = parseInt(localStorage.getItem('lastvisited'));
 // Subtract current time with last-visited time and convert to seconds
 var days = (currentTime - lastTime) /convert;
 
-// Display to the console how many seconds since last page visit
+// // Display to the console how many seconds since last page visit
 // console.log("You last visited " + days.toFixed(0) + "  days ago.");
 
 // document.querySelector('.days').innerHTML = days.toFixed(0);
 // // Store current time in storage to be used the next time we refresh page
 // localStorage.setItem('lastvisited', currentTime);
-
-
-// localStorage.countdays(document.querySelector().value);
 
 
 
@@ -114,6 +111,8 @@ fetch(requestURL)
 
 const towns = jsonObject["towns"];
 for (let i = 0; i< towns.length; i++){
+
+  if (i==0 || i==2 || i==6){
   let cards = document.createElement("section");
 
   let townName = document.createElement("h2");
@@ -142,12 +141,12 @@ for (let i = 0; i< towns.length; i++){
 
   let photo = document.createElement("img");
   photo.setAttribute("src", towns[i].imageurl);
-  photo.setAttribute("alt", towns[i].name + 'The town Motto is ' + townMotto + townName + 'was founded in' + yearFounded +   'current population is ' + currentPopulation + 'average rainfall is ' +  averageRainfall);
+  photo.setAttribute("alt", towns[i].name); 
   cards.append(photo);
 
   document.querySelector("div.cards").appendChild(cards);
 
-}
+}}
 
 
 });
