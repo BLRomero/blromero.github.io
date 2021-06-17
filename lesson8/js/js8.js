@@ -89,9 +89,6 @@ document.querySelector('.days').innerHTML = days.toFixed(0);
 localStorage.setItem('lastvisited', currentTime);
 
 
-// localStorage.countdays(document.querySelector().value);}
-
-
 
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
