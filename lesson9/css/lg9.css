@@ -98,5 +98,12 @@ display: none;
   max-width: 460px;
 }
 
-
+  /* home page */
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section.home {
+    width 100%;
+  }
 }

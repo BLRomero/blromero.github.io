@@ -84,12 +84,12 @@ var days = (currentTime - lastTime) /convert;
 // Display to the console how many seconds since last page visit
 // console.log("You last visited " + days.toFixed(0) + "  days ago.");
 
-document.querySelector('.days').innerHTML = days.toFixed(0);
-// Store current time in storage to be used the next time we refresh page
-localStorage.setItem('lastvisited', currentTime);
+// document.querySelector('.days').innerHTML = days.toFixed(0);
+// // Store current time in storage to be used the next time we refresh page
+// localStorage.setItem('lastvisited', currentTime);
 
 
-// localStorage.countdays(document.querySelector().value);}
+// localStorage.countdays(document.querySelector().value);
 
 
 
@@ -103,3 +103,53 @@ function selectResponse() {
 	s.textContent = sel.value;
 	
 }
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+.then(function (response){
+  return response.json();
+})
+.then(function(jsonObject) {
+  console.table(jsonObject);
+
+const towns = jsonObject["towns"];
+for (let i = 0; i< towns.length; i++){
+  let cards = document.createElement("section");
+
+  let townName = document.createElement("h2");
+  townName.textContent = towns[i].name;
+  cards.append(townName);
+
+  let townMotto = document.createElement('p');
+  townMotto.textContent = towns[i].motto;
+  cards.append(townMotto);
+
+  let yearFounded = document.createElement('h3');
+  yearFounded.textContent = "Year Founded: "  + towns[i].yearFounded;
+  cards.append(yearFounded);
+
+  let currentPopulation = document.createElement("h3");
+  currentPopulation.textContent = "Population: " + towns[i].currentPopulation;
+  cards.append(currentPopulation);
+
+  let averageRainfall = document.createElement('h3');
+  averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+  cards.append(averageRainfall);
+   
+  // let events = document.createElement('p');
+  // events.textContent = "Current Events: " +  towns[i].events;
+  // cards.append(events);
+
+  let photo = document.createElement("img");
+  photo.setAttribute("src", towns[i].imageurl);
+  photo.setAttribute("alt", towns[i].name + 'The town Motto is ' + townMotto + townName + 'was founded in' + yearFounded +   'current population is ' + currentPopulation + 'average rainfall is ' +  averageRainfall);
+  cards.append(photo);
+
+  document.querySelector("div.cards").appendChild(cards);
+
+}
+
+
+});
+
+

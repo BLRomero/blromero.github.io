@@ -326,6 +326,25 @@ p.wireframe {
   padding: 10px;
 }
 
+
+
+/* home page */
+.cards{
+  display: block;
+  width: 100%;
+}
+section {
+
+  text-align: center;
+  background: #a8dadc;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 10px;
+}
+section article {
+  margin: 10px;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
