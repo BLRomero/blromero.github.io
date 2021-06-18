@@ -329,13 +329,13 @@ p.wireframe {
 
 
 /* home page */
-.cards{
+/* .cards{
   display: block;
   width: 100%;
-}
+} */
 section {
 
-  text-align: center;
+  /* text-align: center; */
   background: #a8dadc;
   padding: 20px;
   border: 1px solid black;
@@ -343,6 +343,14 @@ section {
 }
 section article {
   margin: 10px;
+  line-height: 1.5rem;
+  text-align: left;
+  text-indent: 2rem;
+}
+.cards img{
+  border: 2px solid grey;
+  box-shadow: 5px 5px 15px 5px #1d3557;
+  float: ;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

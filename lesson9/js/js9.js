@@ -110,44 +110,106 @@ fetch(requestURL)
   console.table(jsonObject);
 
 const towns = jsonObject["towns"];
-for (let i = 0; i< towns.length; i++){
 
-  if (i==0 || i==2 || i==6){
   let cards = document.createElement("section");
 
   let townName = document.createElement("h2");
-  townName.textContent = towns[i].name;
+  townName.textContent = towns[0].name;
   cards.append(townName);
 
   let townMotto = document.createElement('p');
-  townMotto.textContent = towns[i].motto;
+  townMotto.textContent = towns[0].motto;
   cards.append(townMotto);
 
   let yearFounded = document.createElement('h3');
-  yearFounded.textContent = "Year Founded: "  + towns[i].yearFounded;
+  yearFounded.textContent = "Year Founded: "  + towns[0].yearFounded;
   cards.append(yearFounded);
 
   let currentPopulation = document.createElement("h3");
-  currentPopulation.textContent = "Population: " + towns[i].currentPopulation;
+  currentPopulation.textContent = "Population: " + towns[0].currentPopulation;
   cards.append(currentPopulation);
 
   let averageRainfall = document.createElement('h3');
-  averageRainfall.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+  averageRainfall.textContent = "Average Rainfall: " + towns[0].averageRainfall;
   cards.append(averageRainfall);
    
   // let events = document.createElement('p');
-  // events.textContent = "Current Events: " +  towns[i].events;
+  // events.textContent = "Current Events: " +  towns[0].events;
   // cards.append(events);
 
   let photo = document.createElement("img");
-  photo.setAttribute("src", towns[i].imageurl);
-  photo.setAttribute("alt", towns[i].name); 
+  photo.setAttribute("src", "images/sodasprings.jpg" );
+  photo.setAttribute("alt", towns[0].name); 
   cards.append(photo);
 
   document.querySelector("div.cards").appendChild(cards);
 
-}}
+  cards = document.createElement("section");
 
+  townName = document.createElement("h2");
+  townName.textContent = towns[2].name;
+  cards.append(townName);
+
+  townMotto = document.createElement('p');
+  townMotto.textContent = towns[2].motto;
+  cards.append(townMotto);
+
+  yearFounded = document.createElement('h3');
+  yearFounded.textContent = "Year Founded: "  + towns[2].yearFounded;
+  cards.append(yearFounded);
+
+ currentPopulation = document.createElement("h3");
+  currentPopulation.textContent = "Population: " + towns[2].currentPopulation;
+  cards.append(currentPopulation);
+
+  averageRainfall = document.createElement('h3');
+  averageRainfall.textContent = "Average Rainfall: " + towns[2].averageRainfall;
+  cards.append(averageRainfall);
+   
+  // let events = document.createElement('p');
+  // events.textContent = "Current Events: " +  towns[2].events;
+  // cards.append(events);
+
+ photo = document.createElement("img");
+  photo.setAttribute("src", "images/fishhaven.jpg");
+  photo.setAttribute("alt", towns[2].name); 
+  cards.append(photo);
+
+  document.querySelector("div.cards").appendChild(cards);
+
+
+  cards = document.createElement("section");
+
+  townName = document.createElement("h2");
+  townName.textContent = towns[6].name;
+  cards.append(townName);
+
+  townMotto = document.createElement('p');
+  townMotto.textContent = towns[6].motto;
+  cards.append(townMotto);
+
+  yearFounded = document.createElement('h3');
+  yearFounded.textContent = "Year Founded: "  + towns[6].yearFounded;
+  cards.append(yearFounded);
+
+ currentPopulation = document.createElement("h3");
+  currentPopulation.textContent = "Population: " + towns[6].currentPopulation;
+  cards.append(currentPopulation);
+
+  averageRainfall = document.createElement('h3');
+  averageRainfall.textContent = "Average Rainfall: " + towns[6].averageRainfall;
+  cards.append(averageRainfall);
+   
+  // let events = document.createElement('p');
+  // events.textContent = "Current Events: " +  towns[6].events;
+  // cards.append(events);
+
+ photo = document.createElement("img");
+  photo.setAttribute("src", "images/preston.jpg");
+  photo.setAttribute("alt", towns[6].name); 
+  cards.append(photo);
+
+  document.querySelector("div.cards").appendChild(cards);
 
 });
 
