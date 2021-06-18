@@ -347,6 +347,12 @@ section article {
   text-align: left;
   text-indent: 2rem;
 }
+section.home h2,
+section.home p, 
+section.home a{
+  text-align: center;
+  color: #000;
+}
 .cards img{
   border: 2px solid grey;
   box-shadow: 5px 5px 15px 5px #1d3557;
