@@ -90,127 +90,141 @@ var days = (currentTime - lastTime) /convert;
 
 
 
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
-function selectResponse() {
-	const s = document.querySelector('#selected')
-	const sel = document.querySelector('#selectbrowser');
-	s.style.display = "block";
-	s.textContent = sel.value;
+// function adjustRating(rating) {
+//   document.getElementById("ratingvalue").innerHTML = rating;
+// }
+// function selectResponse() {
+// 	const s = document.querySelector('#selected')
+// 	const sel = document.querySelector('#selectbrowser');
+// 	s.style.display = "block";
+// 	s.textContent = sel.value;
 	
-}
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+// }
+// const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(requestURL)
-.then(function (response){
-  return response.json();
-})
-.then(function(jsonObject) {
-  console.table(jsonObject);
+// fetch(requestURL)
+// .then(function (response){
+//   return response.json();
+// })
+// .then(function(jsonObject) {
+//   // console.table(jsonObject)
+//   ;
 
-const towns = jsonObject["towns"];
+// const towns = jsonObject["towns"];
 
-  let cards = document.createElement("section");
+//   let towninfo = document.createElement("section");
+//   let datadiv = document.createElement("div");
 
-  let townName = document.createElement("h2");
-  townName.textContent = towns[0].name;
-  cards.append(townName);
+//   let h2 = document.createElement("h2");
+//   h2.textContent = towns[0].name;
+//   // cards.append(townName);
 
-  let townMotto = document.createElement('p');
-  townMotto.textContent = towns[0].motto;
-  cards.append(townMotto);
+//   let p1 = document.createElement('p');
+// p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[0].townMotto}`;
+//   // cards.append(townMotto);
 
-  let yearFounded = document.createElement('h3');
-  yearFounded.textContent = "Year Founded: "  + towns[0].yearFounded;
-  cards.append(yearFounded);
+//   let p2 = document.createElement('p');
+//   p1.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[0].yearFounded}`;
+//    // cards.append(yearFounded);
 
-  let currentPopulation = document.createElement("h3");
-  currentPopulation.textContent = "Population: " + towns[0].currentPopulation;
-  cards.append(currentPopulation);
+//   let p3 = document.createElement("p");
+//   p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[0].currentPopulation}`;
+//   // cards.append(currentPopulation);
 
-  let averageRainfall = document.createElement('h3');
-  averageRainfall.textContent = "Average Rainfall: " + towns[0].averageRainfall;
-  cards.append(averageRainfall);
+//   let p4 = document.createElement('p');
+//   p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[0].averageRainfall}`;
+//   // cards.append(averageRainfall);
+
+//   datadiv.append(h2, p1, p2, p3, p4);
+//   datadiv.setAttribute('class', 'data');
    
-  // let events = document.createElement('p');
-  // events.textContent = "Current Events: " +  towns[0].events;
-  // cards.append(events);
+//   // let events = document.createElement('p');
+//   // events.textContent = "Current Events: " +  towns[0].events;
+//   // cards.append(events);
 
-  let photo = document.createElement("img");
-  photo.setAttribute("src", "images/sodasprings.jpg" );
-  photo.setAttribute("alt", towns[0].name); 
-  cards.append(photo);
+//   let photo = document.createElement("img");
+//   photo.setAttribute("src", "images/sodasprings.jpg" );
+//   photo.setAttribute("alt", towns[0].name); 
+//   // cards.append(photo);
 
-  document.querySelector("div.cards").appendChild(cards);
+//   towninfo.append(datadiv, image);
+//   towninfo.setAttribute('class', 'towngrid');
 
-  cards = document.createElement("section");
+//   document.querySelector("div.cards").appendChild(towninfo);
 
-  townName = document.createElement("h2");
-  townName.textContent = towns[2].name;
-  cards.append(townName);
+//   cards = document.createElement("section");
 
-  townMotto = document.createElement('p');
-  townMotto.textContent = towns[2].motto;
-  cards.append(townMotto);
+//   townName = document.createElement("h2");
+//   townName.textContent = towns[2].name;
+//   cards.append(townName);
 
-  yearFounded = document.createElement('h3');
-  yearFounded.textContent = "Year Founded: "  + towns[2].yearFounded;
-  cards.append(yearFounded);
+//   townMotto = document.createElement('p');
+//   townMotto.textContent = towns[2].motto;
+//   cards.append(townMotto);
 
- currentPopulation = document.createElement("h3");
-  currentPopulation.textContent = "Population: " + towns[2].currentPopulation;
-  cards.append(currentPopulation);
+//   yearFounded = document.createElement('p');
+//   yearFounded.textContent = "Year Founded: "  + towns[2].yearFounded;
+//   cards.append(yearFounded);
 
-  averageRainfall = document.createElement('h3');
-  averageRainfall.textContent = "Average Rainfall: " + towns[2].averageRainfall;
-  cards.append(averageRainfall);
+//  currentPopulation = document.createElement('p');
+//   currentPopulation.textContent = "Population: " + towns[2].currentPopulation;
+//   cards.append(currentPopulation);
+
+//   averageRainfall = document.createElement('p');
+//   averageRainfall.textContent = "Average Rainfall: " + towns[2].averageRainfall;
+//   cards.append(averageRainfall);
    
-  // let events = document.createElement('p');
-  // events.textContent = "Current Events: " +  towns[2].events;
-  // cards.append(events);
+//   // let events = document.createElement('p');
+//   // events.textContent = "Current Events: " +  towns[2].events;
+//   // cards.append(events);
 
- photo = document.createElement("img");
-  photo.setAttribute("src", "images/fishhaven.jpg");
-  photo.setAttribute("alt", towns[2].name); 
-  cards.append(photo);
+//  photo = document.createElement("img");
+//   photo.setAttribute("src", "images/fishhaven.jpg");
+//   photo.setAttribute("alt", towns[2].name); 
+//   cards.append(photo);
 
-  document.querySelector("div.cards").appendChild(cards);
+//   cards.append(townName, townMotto, yearFounded, currentPopulation, averageRainfall);
+//   cards.setAttribute("class", "data")
+
+//   document.querySelector("div.cards").appendChild(cards);
 
 
-  cards = document.createElement("section");
+//   cards = document.createElement("section");
 
-  townName = document.createElement("h2");
-  townName.textContent = towns[6].name;
-  cards.append(townName);
+//   townName = document.createElement("h2");
+//   townName.textContent = towns[6].name;
+//   cards.append(townName);
 
-  townMotto = document.createElement('p');
-  townMotto.textContent = towns[6].motto;
-  cards.append(townMotto);
+//   townMotto = document.createElement('p');
+//   townMotto.textContent = towns[6].motto;
+//   cards.append(townMotto);
 
-  yearFounded = document.createElement('h3');
-  yearFounded.textContent = "Year Founded: "  + towns[6].yearFounded;
-  cards.append(yearFounded);
+//   yearFounded = document.createElement('p');
+//   yearFounded.textContent = "Year Founded: "  + towns[6].yearFounded;
+//   cards.append(yearFounded);
 
- currentPopulation = document.createElement("h3");
-  currentPopulation.textContent = "Population: " + towns[6].currentPopulation;
-  cards.append(currentPopulation);
+//  currentPopulation = document.createElement("p");
+//   currentPopulation.textContent = "Population: " + towns[6].currentPopulation;
+//   cards.append(currentPopulation);
 
-  averageRainfall = document.createElement('h3');
-  averageRainfall.textContent = "Average Rainfall: " + towns[6].averageRainfall;
-  cards.append(averageRainfall);
+//   averageRainfall = document.createElement('p');
+//   averageRainfall.textContent = "Average Rainfall: " + towns[6].averageRainfall;
+//   cards.append(averageRainfall);
+
+//  cards.append(townName, townMotto, yearFounded, currentPopulation, averageRainfall);
+//   cards.setAttribute("class", "data")
    
-  // let events = document.createElement('p');
-  // events.textContent = "Current Events: " +  towns[6].events;
-  // cards.append(events);
+//   // let events = document.createElement('p');
+//   // events.textContent = "Current Events: " +  towns[6].events;
+//   // cards.append(events);
 
- photo = document.createElement("img");
-  photo.setAttribute("src", "images/preston.jpg");
-  photo.setAttribute("alt", towns[6].name); 
-  cards.append(photo);
+//  photo = document.createElement("img");
+//   photo.setAttribute("src", "images/preston.jpg");
+//   photo.setAttribute("alt", towns[6].name); 
+//   cards.append(photo);
 
-  document.querySelector("div.cards").appendChild(cards);
+//   document.querySelector("div.cards").appendChild(cards);
 
-});
+// });
 
 
