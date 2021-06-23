@@ -7,25 +7,25 @@ fetch(requestURL)
     // console.table(jsonObject);
     const towns = jsonObject["towns"];
 
-    // first section Soda Springs
+    // first section Preston
     let towninfo = document.createElement("section");
     let datadiv = document.createElement("div");
 
     let h2 = document.createElement("h2");
-    h2.textContent = towns[0].name;
+    h2.textContent = towns[6].name;
       // towns.append(h2);
 
     let p1 = document.createElement('p');
-    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[0].townMotto}`;
+    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[6].motto}`;
 
     let p2 = document.createElement('p');
-    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[0].yearFounded}`;
+    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[6].yearFounded}`;
 
     let p3 = document.createElement("p");
-    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[0].currentPopulation}`;
+    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[6].currentPopulation}`;
    
     let p4 = document.createElement('p');
-    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[0].averageRainfall}`;
+    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[6].averageRainfall}`;
 
 
     datadiv.append(h2, p1, p2, p3, p4);
@@ -46,20 +46,20 @@ fetch(requestURL)
     datadiv = document.createElement("div");
 
     h2 = document.createElement("h2");
-    h2.textContent = towns[0].name;
+    h2.textContent = towns[2].name;
       // towns.append(h2);
 
     p1 = document.createElement('p');
-    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[0].townMotto}`;
+    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[2].motto}`;
 
     p2 = document.createElement('p');
-    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[0].yearFounded}`;
+    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[2].yearFounded}`;
 
     p3 = document.createElement("p");
-    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[0].currentPopulation}`;
+    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[2].currentPopulation}`;
    
     p4 = document.createElement('p');
-    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[0].averageRainfall}`;
+    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[2].averageRainfall}`;
 
 
     datadiv.append(h2, p1, p2, p3, p4);
@@ -74,26 +74,26 @@ fetch(requestURL)
 
     document.querySelector("div.towninfo").appendChild(towninfo);
 
-    // third section
+    // third section Soda Springs
 
     towninfo = document.createElement("section");
     datadiv = document.createElement("div");
 
     h2 = document.createElement("h2");
-    h2.textContent = towns[6].name;
+    h2.textContent = towns[0].name;
       // towns.append(h2);
 
     p1 = document.createElement('p');
-    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[6].townMotto}`;
+    p1.innerHTML = `<span class="infoHeadings">Town Motto: </span> ${towns[0].motto}`;
 
     p2 = document.createElement('p');
-    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[6].yearFounded}`;
+    p2.innerHTML = `<span class="infoHeadings">Year Founded: </span> ${towns[0].yearFounded}`;
 
     p3 = document.createElement("p");
-    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[6].currentPopulation}`;
+    p3.innerHTML = `<span class="infoHeadings">Population: </span> ${towns[0].currentPopulation}`;
    
     p4 = document.createElement('p');
-    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[6].averageRainfall}`;
+    p4.innerHTML = `<span class="infoHeadings">Annual Rain Fall: </span> ${towns[0].averageRainfall}`;
 
 
     datadiv.append(h2, p1, p2, p3, p4);
