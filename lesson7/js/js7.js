@@ -82,7 +82,7 @@ var lastTime = parseInt(localStorage.getItem('lastvisited'));
 var days = (currentTime - lastTime) /convert;
 
 // Display to the console how many seconds since last page visit
-console.log("You last visited " + days.toFixed(0) + "  days ago.");
+// console.log("You last visited " + days.toFixed(0) + "  days ago.");
 
 document.querySelector('.days').innerHTML = days.toFixed(0);
 // Store current time in storage to be used the next time we refresh page

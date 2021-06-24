@@ -38,7 +38,7 @@ fetch(requestURL)
     towninfo.append(datadiv, image);
     towninfo.setAttribute('class', 'oddgrid');
 
-    document.querySelector("div.towninfo").appendChild(towninfo);
+    // document.querySelector("div.towninfo").appendChild(towninfo);
 
    
     // // second section Fish haven
@@ -72,7 +72,7 @@ fetch(requestURL)
     towninfo.append(datadiv, image);
     towninfo.setAttribute('class', 'evengrid');
 
-    document.querySelector("div.towninfo").appendChild(towninfo);
+ 
 
     // third section Soda Springs
 
@@ -106,5 +106,4 @@ fetch(requestURL)
     towninfo.append(datadiv, image);
     towninfo.setAttribute('class', 'oddgrid');
 
-    document.querySelector("div.towninfo").appendChild(towninfo);
   });

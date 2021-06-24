@@ -1,8 +1,18 @@
+d = new Date();
+n = d.getFullYear();
+document.querySelector('#year').innerHTML = n;
+
+options = {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+};
+// document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+
+
 
 // count
-var d = new Date();
-var n = d.getFullYear();
-document.querySelector('#year').innerHTML = n;
 
 // For use in converting milliseconds to seconds
 const ONESECOND = 1000;
@@ -30,4 +40,14 @@ var days = (currentTime - lastTime) /convert;
 // localStorage.setItem('lastvisited', currentTime);
 
 
-// localStorage.countdays(document.querySelector().value);}
+
+function adjustRating(rating) {
+  document.getElementById("ratingvalue").innerHTML = rating;
+}
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
