@@ -359,6 +359,28 @@ section.home a{
 
 }
 
+#icon {
+  max-width: 70px;
+}
+#imagesrc{
+  font-size: 12px;
+  word-wrap: break-word;
+}
+section.forecast h2{
+  text-align: center;
+}
+section.forecast table{
+  display: inline-block;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  padding: 15px;
+  -ms-grid-column-align: center;
+}
+.forecast table th, td {
+  border: 1px solid black;
+}
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
