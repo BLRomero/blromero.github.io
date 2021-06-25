@@ -53,10 +53,12 @@ fetch(apiurl)
 
     fivedayforecast.forEach(x => {
       let d = new Date(x.dt_txt);
+      day++;
       // console.log(d);
 
       document.getElementById(`dayofweek${day +1}`).textContent = dayofweek[d.getDay()];
       document.getElementById(`forecast${day +1}`).textContent = x.main.temp.toFixed();
+      document.getElementById('icon').textContent = imagesrc;
     })
     // for (let i = 0; i < fivedayforecast.length; i++) {
     //   let forecast = fivedayforecast[i];
