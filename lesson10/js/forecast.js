@@ -58,7 +58,11 @@ fetch(apiurl)
 
       document.getElementById(`dayofweek${day +1}`).textContent = dayofweek[d.getDay()];
       document.getElementById(`forecast${day +1}`).textContent = x.main.temp.toFixed();
-      document.getElementById('icon').textContent = imagesrc;
+      // document.getElementById('icon').textContent = imagesrc;
+      const imagesrc = `https://openweathermap.org/img/w/${jsObject.fivedayforecast.weather[0].icon}.png`;
+      document.getElementById('imagesrc').textContent = imagesrc;
+      document.getElementById('icon').setAttribute('src', imagesrc);
+      console.log(imagesrc);
     })
     // for (let i = 0; i < fivedayforecast.length; i++) {
     //   let forecast = fivedayforecast[i];
