@@ -366,19 +366,31 @@ section.home a{
   font-size: 12px;
   word-wrap: break-word;
 }
-section.forecast h2{
-  text-align: center;
-}
-section.forecast table{
-  display: inline-block;
-  grid-template-columns: repeat(5, 1fr);
-  width: 100%;
-  padding: 15px;
-  -ms-grid-column-align: center;
-}
-.forecast table th, td {
+
+.forecast {
   border: 1px solid black;
+ 
 }
+div.forecast {
+  display: grid; 
+   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+}
+
+  div.forecast table {
+  border-collapse: collapse;
+  margin: 0 ;
+}
+div.forecast h2, th, td{
+  text-align: center;
+  font-size: 15px;
+  border-right: 1px solid black;
+  margin: 0;
+}
+div.forecast h2 {
+  background-color: #45789D;
+  padding: 15px;
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

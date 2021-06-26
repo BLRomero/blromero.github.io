@@ -106,4 +106,12 @@ display: none;
   section.home {
     width: 100%;
   }
+    
+  div.forecast h2, th, td{
+    
+    font-size: 30px;
+   
+  }
+
+  
 }
