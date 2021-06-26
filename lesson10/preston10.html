@@ -26,7 +26,8 @@
   <script defer src="js/towninfo.js"></script>
   <script defer src="js/windchill.js"></script>
   <script defer src="js/js10.js"></script>
-  <script defer src="js/forecast.js"></script>
+  <script defer src="js/weathersummary.js"></script>
+  <script defer src="js/fivedayforecast.js"></script>
 
 </head>
 
@@ -74,7 +75,7 @@
           <p>Currently: <span class="currentTemp"></span>&#176; F &nbsp;&nbsp; &&nbsp;&nbsp; <span
               id='currently'></span></p>
 
-          <p>High: <span class="high"></span>&#176; F</p>
+          <p>High/Low: <span class="high"></span>&#176;/ <span class="low"></span>&#176; F</p>
 
           <p>Wind Speed: <span class="wind"></span> mph</p>
 
@@ -98,11 +99,12 @@
           <th><span id="dayofweek6"></span></th>
         </tr>
         <tr>
-          <td><img id="icon0"></td>
-          <td><img id="icon1"></td>
+          <td><span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon">
+            <p><img id="icon" src="" alt=""></p></td>
+          <!-- <td><img id="icon1"></td>
           <td><img id="icon2"></td>
           <td><img id="icon3"></td>
-          <td><img id="icon4"></td>
+          <td><img id="icon4"></td> -->
          
         
         </tr>
