@@ -1,10 +1,10 @@
 // 5 Day Forecast
-const cityidf = "5604473";
-const APPIDf = "17ae5c140fafbe607c5caf358df91955";
+const cityidsf = "5585010";
+const APPIDsf = "17ae5c140fafbe607c5caf358df91955";
 // api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
-const apiurlf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidf}&APPID=${APPIDf}&units=imperial`;
+const apiurlsf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidsf}&APPID=${APPIDsf}&units=imperial`;
 
-fetch(apiurlf)
+fetch(apiurlsf)
   .then((response) => response.json())
   .then((jsObject) => {
     // console.log(jsObject);
@@ -24,8 +24,8 @@ fetch(apiurlf)
       day++;
       // console.log(d);
 
-      document.getElementById(`pdayofweek${day +1}`).textContent = dayofweek[d.getDay()];
-      document.getElementById(`pforecast${day +1}`).textContent = x.main.temp.toFixed();
+      document.getElementById(`sdayofweek${day +1}`).textContent = dayofweek[d.getDay()];
+      document.getElementById(`sforecast${day +1}`).textContent = x.main.temp.toFixed();
 
 
     
@@ -34,6 +34,6 @@ fetch(apiurlf)
       // console.log(imagesrcf);
 
       // document.getElementById('imagesrcf').textContent = icon;
-      document.getElementById('picon').setAttribute('src', imagesrcf);
+      document.getElementById('sicon').setAttribute('src', imagesrcf);
 
         })});

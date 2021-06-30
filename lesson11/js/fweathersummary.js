@@ -8,7 +8,7 @@
   fetch(apiurl)
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log(jsObject);
+      // console.log(jsObject);
       
   
       const temperature = document.querySelector('.fcurrentTemp');
@@ -18,22 +18,22 @@
 
       const currently = document.querySelector('#fcurrently');
       currently.innerHTML = `<strong>${jsObject.weather[0].description.toUpperCase()}</strong>`;
-      console.log(currently);
+      // console.log(currently);
 
       const high = document.querySelector('.fhigh');
       high.textContent = jsObject.main.temp_max.toFixed(0);
       const low = document.querySelector('.flow');
       low.textContent = jsObject.main.temp_min.toFixed(0);
-       console.log(high);
-      console.log(low);
+      //  console.log(high);
+      // console.log(low);
   
       const wind = document.querySelector('.fwind');
       wind.textContent = jsObject.wind.speed.toFixed(0);
-      console.log(wind);
+      // console.log(wind);
   
       const humidity = document.querySelector('.fhumidity');
       humidity.textContent = jsObject.main.humidity;
-      console.log(humidity);
+      // console.log(humidity);
       
   
   
