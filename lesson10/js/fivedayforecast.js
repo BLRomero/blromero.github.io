@@ -12,10 +12,12 @@ fetch(apiurlf)
 
     let day = 0;
     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-   
+
     const fivedayforecast = jsObject.list.filter((forecast) => forecast.dt_txt.includes("18:00:00"));
     console.log(fivedayforecast);
-   
+
+
+
     // let img = "https://openweathermap.org/img/w/";
     // console.log(img);
 
@@ -23,18 +25,17 @@ fetch(apiurlf)
     fivedayforecast.forEach(x => {
       let d = new Date(x.dt_txt);
       day++;
-      // console.log(d);
+      console.log(d);
 
       document.getElementById(`dayofweek${day +1}`).textContent = dayofweek[d.getDay()];
       document.getElementById(`forecast${day +1}`).textContent = x.main.temp.toFixed();
 
 
-    
-      const imagesrcf = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
+
       // document.getElementById(`imagesrcf${day +1}`).setAttribute
+      // document.getElementById('imagesrcf').textContent = icon;
+      document.getElementById('icon').setAttribute('src', "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png");
       console.log(imagesrcf);
 
-      // document.getElementById('imagesrcf').textContent = icon;
-      document.getElementById('icon').setAttribute('src', imagesrcf);
-
-        })});
+    })
+  });
