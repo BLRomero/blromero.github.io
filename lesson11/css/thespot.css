@@ -115,10 +115,11 @@ nav ul li.hide {
 } */
 .herodiv {
   position: relative;
-  margin: 10px auto;
+  
   border: 1px solid black;
   max-width: 360px;
   height: auto;
+  
 
 }
 
@@ -334,57 +335,50 @@ p.wireframe {
   padding: 10px;
 }
 
-
-
-/* home page */
-/* .cards{
-  display: block;
-  width: 100%;
-} */
 section {
-
-  /* text-align: center; */
-  background: #a8dadc;
-  padding: 20px;
   border: 1px solid black;
-  margin: 10px;
 }
+
 section article {
   margin: 10px;
   line-height: 1.5rem;
   text-align: left;
   text-indent: 2rem;
+  padding: 20px;
+  margin-top: 30px;
 }
+
 section.home h2,
 section.home p, 
 section.home a{
   text-align: center;
   color: #000;
 }
+
 .cards img{
   border: 2px solid grey;
   box-shadow: 5px 5px 15px 5px #1d3557;
-
 }
 
 #icon {
   max-width: 70px;
 }
+
 #imagesrc{
   font-size: 12px;
   word-wrap: break-word;
 }
 
-p.forecast {
+.pforecast, .sforecast, .fforecast {
   border: 1px solid black;
  
 }
-div.pforecast {
+div.pforecast, div.fforecast, div.sforecast {
   display: grid; 
    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
 }
 
-  div.pforecast table {
+  div.pforecast table, div.sforecast table, div.fforecast table {
   border-collapse: collapse;
   margin: 0 ;
 }
@@ -394,9 +388,12 @@ div.pforecast h2, th, td{
   border-right: 1px solid black;
   margin: 0;
 }
-div.pforecast h2 {
+div.pforecast h2, 
+div.fforecast h2, 
+div.sforecast h2 {
   background-color: #45789D;
   padding: 15px;
+
 }
 
 
