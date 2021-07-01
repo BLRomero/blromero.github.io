@@ -12,7 +12,16 @@
   <link rel="stylesheet" href="css/thespot.css" />
  
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <script defer src="js/js8.js"></script>
+    <!-- <script defer src="js/banner.js"></script> -->
+    <script defer src="js/currentdate.js"></script>
+    <script defer src="js/lasttimevisited.js"></script>
+    <script defer src="js/lazyload.js"></script>
+    <script defer src="js/responsivemenu.js"></script>
+    <script defer src="js/towninfo.js"></script>
+    <!-- <script defer src="js/windchill.js"></script> -->
+    <script defer src="js/js10.js"></script>
+    <script defer src="js/fweathersummary.js"></script>
+    <script defer src="js/ffivedayforecast.js"></script>
 
  
 </head>
@@ -44,8 +53,8 @@
     pattern="[a-zA-Z][a-zA-Z\s]*{5,}" required></label>
   
    <label class="info">Email <input type="email" name="email" placeholder="someone@somewhere.com"></label>
-   <label class="info" id="phone">Phone* <input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}".required></label>
-   <label class="info">Zip Code* <input type="number" name="zip" pattern="[0-9]" minlength="5" required></label>
+   <label class="info" id="phone">Phone* <input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required></label>
+   <label class="info">Zip Code* <input type="number" name="zip" pattern="[0-9]"  required></label>
    </fieldset>
 
     <fieldset class="storm">
@@ -94,18 +103,18 @@
         <option value="fish">Fish Haven</option>
         <option value=""></option>
          </select>
-    </label></div>
+    </label>
 
-  <div> Are you in imminent danger?
+  <p> Are you in imminent danger?</p>
   <label class="storm"><input type="radio" name="danger" value="yes">Yes</label>
   <label class="storm"><input type="radio" name="danger" value="maybe">Maybe</label>
-  <label class="storm"><input type="radio" name="danger" value="no">No</label></div>
+  <label class="storm"><input type="radio" name="danger" value="no">No</label>
 </div> 
 
   </fieldset>
   <fieldset>
     <legend>Information / Comments</legend>
-    <label class="add"><textarea name="comments" id="" cols="30" rows="15" placeholder="Leave any additional information or comments here"></textarea></label>
+    <label class="add"><textarea name="comments" cols="30" rows="15" placeholder="Leave any additional information or comments here"></textarea></label>
   </fieldset>
 
 <input class="submitBtn" type="submit" value="Send Storm Information">
