@@ -11,10 +11,10 @@ fetch(apiurlsf)
 
     let day = 0;
     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-   
+
     const fivedayforecast = jsObject.list.filter((forecast) => forecast.dt_txt.includes("18:00:00"));
     // console.log(fivedayforecast);
-   
+
     // let img = "https://openweathermap.org/img/w/";
     // console.log(img);
 
@@ -28,12 +28,44 @@ fetch(apiurlsf)
       document.getElementById(`sforecast${day +1}`).textContent = x.main.temp.toFixed();
 
 
-    
-      const imagesrcf = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
+
+      // const imagesrcf = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
       // document.getElementById(`imagesrcf${day +1}`).setAttribute
       // console.log(imagesrcf);
 
       // document.getElementById('imagesrcf').textContent = icon;
-      document.getElementById('sicon').setAttribute('src', imagesrcf);
+      // document.getElementById('sicon').setAttribute('src', imagesrcf);
 
-        })});
+
+
+      document.getElementById(`picon${day +1}`).src = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
+      document.getElementById(`picon${day +1}`).src = "https://openweathermap.org/img/w/" + x.weather[0].description + ".png";
+      console.log();
+
+
+    })
+  });
+
+
+
+
+const townlisturl = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(townlisturl)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    // console.log(townlisturl);
+
+    const events1 = document.querySelector('#event1');
+    events1.innerHTML = jsObject.towns[0].events[0];
+    // console.log(events1);
+
+    const events2 = document.querySelector('#event2');
+    events2.innerHTML = jsObject.towns[0].events[1];
+    // console.log(events2);
+
+    const events3 = document.querySelector('#event3');
+    events3.innerHTML = jsObject.towns[0].events[2];
+    // console.log(events3);
+
+  });
