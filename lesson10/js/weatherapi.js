@@ -7,17 +7,25 @@ fetch(apiurl)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    const temperature = document.querySelector('#temperature');temperature.textContent = jsObject.list[0].main.temp.toFixed(0);
+    const temperature = document.querySelector('#temperature');
+    temperature.textContent = jsObject.list[0].main.temp.toFixed(0);
     const currently = document.querySelector('#currently');
     currently.innerHTML = `<strong>${jsObject.list[0].weather[0].description.toUpperCase()}</strong>`;
-    console.log(temperature);
+    // console.log(temperature);
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.list[0].weather[0].icon}.png`;
     const desc = jsObject.list[0].weather[0].description; 
+
+    const events = document.querySelector('#events');
+    events.textContent=jsObject.list[0].main.event;
+   console.log(events);
+   
     // note how we reference the weather array
     document.getElementById('imagesrc').textContent = imagesrc; 
     // informational specification only
     document.getElementById('icon').setAttribute('src', imagesrc); 
     // focus on the setAttribute() method
     document.getElementById('icon').setAttribute('alt', desc);
+
+    document.getElementById('events').textContent = events;
   });
 

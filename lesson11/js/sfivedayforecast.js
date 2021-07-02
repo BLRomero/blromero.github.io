@@ -15,10 +15,6 @@ fetch(apiurlsf)
     const fivedayforecast = jsObject.list.filter((forecast) => forecast.dt_txt.includes("18:00:00"));
     // console.log(fivedayforecast);
 
-    // let img = "https://openweathermap.org/img/w/";
-    // console.log(img);
-
-
     fivedayforecast.forEach(x => {
       let d = new Date(x.dt_txt);
       day++;
@@ -27,22 +23,9 @@ fetch(apiurlsf)
       document.getElementById(`sdayofweek${day +1}`).textContent = dayofweek[d.getDay()];
       document.getElementById(`sforecast${day +1}`).textContent = x.main.temp.toFixed();
 
-
-
-      // const imagesrcf = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
-      // document.getElementById(`imagesrcf${day +1}`).setAttribute
-      // console.log(imagesrcf);
-
-      // document.getElementById('imagesrcf').textContent = icon;
-      // document.getElementById('sicon').setAttribute('src', imagesrcf);
-
-
-
-      document.getElementById(`picon${day +1}`).src = "https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
-      document.getElementById(`picon${day +1}`).src = "https://openweathermap.org/img/w/" + x.weather[0].description + ".png";
-      console.log();
-
-
+      document.getElementById(`sicon${day +1}`).src ="https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
+      // document.getElementById(`sicon${day +1}`).src = `https://openweathermap.org/img/w/${jsObject.weather[0].description}.png`;
+    
     })
   });
 

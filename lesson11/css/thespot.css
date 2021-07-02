@@ -163,12 +163,16 @@ section.article,
 section.article {
   border: 1px solid #1d3557;
   padding: 20px;
+ 
 }
 
-.pforecast h2 {
+.pforecast h2, 
+.sforecast h2, 
+.fforecast h2 {
   background-color: #a8dadc;
   font-size: 25px;
   padding: 25px;
+  text-align: center;
 }
 
 .article h2 {
@@ -191,6 +195,11 @@ section.article {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 
+}
+div.gallery figure{
+  border: 1px solid black;
+  padding: 25px;
+  background: linear-gradient(#457b9d, #a8dadc, #457b9d);
 }
 
 /* .gallery  {
@@ -405,7 +414,7 @@ div.fforecast table {
   margin: 0;
 }
 
-div.pforecast h2,
+div.pforecast 
 th,
 td {
   text-align: center;
@@ -435,9 +444,15 @@ td {
 div.pforecast h2,
 div.fforecast h2,
 div.sforecast h2 {
-  background-color: #45789D;
+  background-color: #a8dadc;
   padding: 15px;
 
+}
+.events {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(#457b9d, #a8dadc, #457b9d);
+  font-size: 20px;
 }
 
 
@@ -546,12 +561,20 @@ div.sforecast h2 {
     display: table;
   } */
 
-  div.forecast h2,
+  div.pforecast h2,
   th,
   td {
-
-    font-size: 20px;
-
+    font-size: 25px;
+  }
+  div.fforecast h2,
+  th,
+  td {
+    font-size: 25px;
+  }
+  div.sforecast h2,
+  th,
+  td {
+    font-size: 25px;
   }
 
 }
@@ -678,7 +701,21 @@ div.sforecast h2 {
     width: 100%;
   }
 
-  div.forecast h2,
+  div.pforecast h2,
+  th,
+  td {
+
+    font-size: 30px;
+
+  }
+  div.fforecast h2,
+  th,
+  td {
+
+    font-size: 30px;
+
+  }
+  div.sforecast h2,
   th,
   td {
 

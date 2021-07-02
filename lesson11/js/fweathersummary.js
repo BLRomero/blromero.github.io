@@ -44,4 +44,10 @@
   
       document.getElementById('fimagesrc').textContent = imagesrc;
       document.getElementById('ficon').setAttribute('src', imagesrc);
+
+
+      // const events = document.querySelector('.events');
+      // events.textContent=jsObject.
+
+
     });
