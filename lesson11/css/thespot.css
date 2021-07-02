@@ -441,6 +441,29 @@ td {
   margin: 0;
 }
 
+div.fforecast h2, th, td :nth-child(4) {
+    border-right: none;
+}
+
+div.fforecast .last{
+  border-right: none;
+}
+ div.pforecast h2, th, td :nth-child(4) {
+    border-right: none;
+ } 
+
+div.pforecast .last{
+  border-right: none;
+}
+div.sforecast h2, th, td :nth-child(4) {
+    border-right: none;
+}
+
+div.sforecast .last{
+  border-right: none;
+}
+
+
 div.pforecast h2,
 div.fforecast h2,
 div.sforecast h2 {
