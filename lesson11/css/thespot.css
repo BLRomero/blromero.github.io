@@ -194,7 +194,7 @@ section.article {
   width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
- 
+
 
 }
 
@@ -333,7 +333,22 @@ p.wireframe {
 
 section {
   border: 1px solid black;
+  padding: 10px;
+  background: linear-gradient(#457b9d, #a8dadc, #457b9d);
+  margin: 10px;
+  margin-left: 0;
+  margin-right: 0;
+
 }
+
+
+section.towninfo{
+  border: none;
+  background:white;
+  margin: 0;
+  padding: 0;
+ }
+
 
 section article {
   margin: 10px;
@@ -516,7 +531,7 @@ div.sforecast h2 {
     top: 30px;
     padding: 0.75rem;
   }
- 
+
 
   .article img {
     float: right;
@@ -548,6 +563,19 @@ div.sforecast h2 {
     grid-template-rows: 1fr;
     gap: 1rem;
   }
+  
+section.towninfo{
+  border: none;
+  background:white;
+  /* margin: 0; */
+  padding: 0;
+ }
+div.towninfo{
+  
+background:white;
+
+  
+}
 
   .evengrid img {
     grid-column: 1 / 2;
@@ -696,14 +724,11 @@ div.sforecast h2 {
   }
 
   /* home page */
+
   .oddgrid,
   .evengrid {
     display: block;
     text-align: center;
-  }
-
-  section.home {
-    width: 100%;
   }
 
   div.pforecast h2,
@@ -729,6 +754,28 @@ div.sforecast h2 {
     font-size: 30px;
 
   }
+  section {
+    
+    margin-left: 5px;
+    margin-right: 5px;
+  
+  }
+  
+section.towninfo{
+  border: none;
+  background:white;
+ 
+    
+ }
+div.towninfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* margin: 1px; */
+  /* padding: 10px; */
+background:white;
+
+  
+}
 
 
 }
