@@ -20,6 +20,7 @@ main,
 footer {
   margin: auto;
   max-width: 360px;
+  padding: 5px;
 }
 
 header,
@@ -156,18 +157,18 @@ nav ul li.hide {
 
 
 .pforecast,
-section.article, 
+section.article,
 .sforecast,
-section.article, 
+section.article,
 .fforecast,
 section.article {
   border: 1px solid #1d3557;
   padding: 20px;
- 
+
 }
 
-.pforecast h2, 
-.sforecast h2, 
+.pforecast h2,
+.sforecast h2,
 .fforecast h2 {
   background-color: #a8dadc;
   font-size: 25px;
@@ -191,12 +192,13 @@ section.article {
 .gallery {
   display: grid;
   width: 100%;
-  grid-gap: 25px;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+ 
 
 }
-div.gallery figure{
+
+div.gallery figure {
   border: 1px solid black;
   padding: 25px;
   background: linear-gradient(#457b9d, #a8dadc, #457b9d);
@@ -384,8 +386,7 @@ div.fforecast table {
   margin: 0;
 }
 
-div.pforecast 
-th,
+div.pforecast th,
 td {
   text-align: center;
   font-size: 15px;
@@ -411,25 +412,33 @@ td {
   margin: 0;
 }
 
-div.fforecast h2, th, td :nth-child(4) {
-    border-right: none;
-}
-
-div.fforecast .last{
+div.fforecast h2,
+th,
+td :nth-child(4) {
   border-right: none;
 }
- div.pforecast h2, th, td :nth-child(4) {
-    border-right: none;
- } 
 
-div.pforecast .last{
+div.fforecast .last {
   border-right: none;
 }
-div.sforecast h2, th, td :nth-child(4) {
-    border-right: none;
+
+div.pforecast h2,
+th,
+td :nth-child(4) {
+  border-right: none;
 }
 
-div.sforecast .last{
+div.pforecast .last {
+  border-right: none;
+}
+
+div.sforecast h2,
+th,
+td :nth-child(4) {
+  border-right: none;
+}
+
+div.sforecast .last {
   border-right: none;
 }
 
@@ -441,6 +450,7 @@ div.sforecast h2 {
   padding: 15px;
 
 }
+
 .events {
   text-align: center;
   padding: 20px;
@@ -469,6 +479,7 @@ div.sforecast h2 {
   nav,
   footer {
     max-width: 560px;
+    padding: 5px;
   }
 
   header img {
@@ -505,6 +516,7 @@ div.sforecast h2 {
     top: 30px;
     padding: 0.75rem;
   }
+ 
 
   .article img {
     float: right;
@@ -517,7 +529,7 @@ div.sforecast h2 {
     display: grid;
     grid-auto-flow: dense;
     width: 100%;
-    grid-gap: 25px;
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 
@@ -559,11 +571,13 @@ div.sforecast h2 {
   td {
     font-size: 25px;
   }
+
   div.fforecast h2,
   th,
   td {
     font-size: 25px;
   }
+
   div.sforecast h2,
   th,
   td {
@@ -644,7 +658,6 @@ div.sforecast h2 {
     position: absolute;
     top: 40px;
     left: 40px;
-
     border: 1px solid black;
     padding: 1rem;
 
@@ -654,7 +667,6 @@ div.sforecast h2 {
     display: grid;
     grid-auto-flow: dense;
     width: 100%;
-    grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
 
@@ -701,6 +713,7 @@ div.sforecast h2 {
     font-size: 30px;
 
   }
+
   div.fforecast h2,
   th,
   td {
@@ -708,6 +721,7 @@ div.sforecast h2 {
     font-size: 30px;
 
   }
+
   div.sforecast h2,
   th,
   td {

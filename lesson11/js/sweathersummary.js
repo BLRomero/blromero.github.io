@@ -39,6 +39,6 @@ fetch(apiurls)
 
     
 
-    document.getElementById('simagesrc').textContent = imagesrc;
+    // document.getElementById('simagesrc').textContent = imagesrc;
     document.getElementById('sicon').setAttribute('src', imagesrc);
   });

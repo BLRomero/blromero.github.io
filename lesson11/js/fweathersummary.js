@@ -42,7 +42,7 @@
   
       
   
-      document.getElementById('fimagesrc').textContent = imagesrc;
+      // document.getElementById('fimagesrc').textContent = imagesrc;
       document.getElementById('ficon').setAttribute('src', imagesrc);
 
 

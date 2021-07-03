@@ -38,7 +38,7 @@ fetch(apiurlp)
 
     
 
-    document.getElementById('pimagesrc').textContent = imagesrc;
+    // document.getElementById('pimagesrc').textContent = imagesrc;
     document.getElementById('picon').setAttribute('src', imagesrc);
   });
 
