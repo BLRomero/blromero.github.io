@@ -1,0 +1,83 @@
+{
+  "businesses":[
+    {
+      "name": "American Momentum Bank",
+      "purpose": "Bank",
+      "address": "200 E Hondo Ave",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "830-663-9330",
+      "website": "https://americanmomentum.bank"
+    },
+
+    {
+      "name": "Billy Bob's Hamburgers",
+      "purpose": "food",
+      "address": "619 E Hondo Ave",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "2830-663-8101",
+      "website":"https://billybobshamburgers.com"
+
+    },
+    {
+      "name": "Calame Store",
+      "purpose": "retail",
+      "address": "2598 CR 5710",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "830-931-7370",
+      "website":"https://www.facebook.com/Calame-Store-358311471530949/"
+
+    },
+    {
+      "name": "Devine Chiropractic",
+      "purpose": "medical",
+      "address": "283 CR 6614",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "210-452-1280",
+      "website":"https://www.devineback.com/"
+
+    },
+    {
+      "name": "Felipe's Tire Shop",
+      "purpose": "retail",
+      "address": "310 Adams Ave",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "830-663-5733",
+      "website":"https://www.felipestireshop.com/"
+
+    },
+    {
+      "name": "Mark Kidd State Farm",
+      "purpose": "insurance",
+      "address": "700 W Hondo Ave",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "830-665-2807",
+      "website":"https://www.statefarm.com/agent/us/tx/devine/mark-kidd-35pqr1ys000"
+
+    },
+    {
+      "name": "Sandy Oaks Ranch",
+      "purpose": "events / hunting",
+      "address": "1480 IH 35 S",
+      "city": "Devine",
+      "state": "Texas",
+      "zip":"78016",
+      "phonenumber": "210-394-4857",
+      "website":"https://www.sandyoaksranch.com/"
+
+    }
+   
+  ]
+}
+

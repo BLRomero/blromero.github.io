@@ -340,7 +340,10 @@ section {
   margin-right: 0;
 
 }
-
+section.oops{
+  border: none;
+  padding: 0;
+}
 
 section.towninfo{
   border: none;

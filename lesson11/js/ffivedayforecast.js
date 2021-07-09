@@ -7,13 +7,13 @@ const apiurlff = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidff
 fetch(apiurlff)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+    console.log(jsObject);
 
     let day = 0;
     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
     const fivedayforecast = jsObject.list.filter((forecast) => forecast.dt_txt.includes("18:00:00"));
-    // console.log(fivedayforecast);
+    console.log(fivedayforecast);
 
     fivedayforecast.forEach(x => {
       let d = new Date(x.dt_txt);
