@@ -7,7 +7,7 @@ const apiurlsf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidsf
 fetch(apiurlsf)
   .then((response) => response.json())
   .then((jsObject) => {
-    // console.log(jsObject);
+    console.log(jsObject);
 
     let day = 0;
     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -21,6 +21,7 @@ fetch(apiurlsf)
       // console.log(d);
 
       document.getElementById(`sdayofweek${day +1}`).textContent = dayofweek[d.getDay()];
+      
       document.getElementById(`sforecast${day +1}`).textContent = x.main.temp.toFixed();
 
       document.getElementById(`sicon${day +1}`).src ="https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";

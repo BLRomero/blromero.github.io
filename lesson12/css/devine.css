@@ -1,19 +1,135 @@
-body, main header, footer{
+body {
   font-family: 'Uchen', serif;
+  font-size: 16px;
+  padding: 25px;
+
+}
+
+header,
+footer,
+nav {
+  background-color: #023047;
+  color: #fb8500;
+}
+
+header,
+nav,
+main,
+footer {
+  margin: auto;
+  max-width: 360px;
+  padding: 5px;
+}
+
+footer a {
+  color: #fb8500;
+}
+
+header{
+  font-size: 30px;
+}
+header img{
+  max-width: 150px;
+  float: left;
+}
+header, nav, footer {
+  text-align: center;
+}
+
+nav {
+  background-color: #8ecae6;
+  color: black;
+  text-decoration: none;
+}
+
+
+nav ul {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  border-top: 1px solid rgba(0,0,0,0.3);
+  font-size: 14px;
+}
+nav ul li a:visited {
+  background-color: #555;
+}
+
+nav ul li a:hover {
+  background-color: #219ebc;
+}
+
+nav ul li a:active{
+  background: #ffb703;
+}
+
+/* .navigation li{
+  display: none;
+} */
+
+.responsive li {
+  display: block;
+}
+
+/* .herodiv img:nth-child(1){
+  float: left;
+  border: 2px solid black;
+  max-width: 360px; 
+  width: 25%;
+
+} */
+
+.weathersummary{
+  background: radial-gradient(#ffb708, #fb8500);
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.5rem;
+
+}
+
+.forecast{
+  background: #fb8500;
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.stars {
+  background: #219ebc;
+  display: block;
+  
+}
+
+.contact p{
+margin: 0;
 }
 
 
 
-@media only screen and (min_width: 35rem) {
-  
 
+@media only screen and (min_width: 35rem) {
+
+  header,
+  nav,
+  main,
+  footer {
+    margin: auto;
+    max-width: 560px;
+    padding: 5px;
+  }
 
 }
 
 
 @media only screen and (min-width: 64rem) {
 
-
+  header,
+  nav,
+  main,
+  footer {
+    margin: auto;
+    max-width: 960px;
+    padding: 5px;
+  }
 
 
 }
