@@ -2,7 +2,7 @@ body {
   font-family: 'Uchen', serif;
   font-size: 16px;
   padding: 25px;
-
+  
 }
 
 header,
@@ -25,14 +25,18 @@ footer a {
   color: #fb8500;
 }
 
-header{
-  font-size: 30px;
+header {
+  font-size: 20px;
 }
-header img{
+
+header img {
   max-width: 150px;
   float: left;
 }
-header, nav, footer {
+
+header,
+nav,
+footer {
   text-align: center;
 }
 
@@ -47,9 +51,10 @@ nav ul {
   display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
-  border-top: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 14px;
 }
+
 nav ul li a:visited {
   background-color: #555;
 }
@@ -58,13 +63,13 @@ nav ul li a:hover {
   background-color: #219ebc;
 }
 
-nav ul li a:active{
+nav ul li a:active {
   background: #ffb703;
 }
 
-/* .navigation li{
-  display: none;
-} */
+.navigation li {
+  list-style: none;
+}
 
 .responsive li {
   display: block;
@@ -75,18 +80,20 @@ nav ul li a:active{
   border: 2px solid black;
   max-width: 360px; 
   width: 25%;
-
 } */
 
-.weathersummary{
-  background: radial-gradient(#ffb708, #fb8500);
-  border: 1px solid black;
+.weathersummary {
+   border: 1px solid black;
   text-align: center;
-  padding: 0.5rem;
+  color: black;
+  font-size:16px;
+ }
 
-}
+ .weathersummary {
+   background-image: url(../images/roundbales960.jpg);
+   }
 
-.forecast{
+.forecast {
   background: #fb8500;
   border: 1px solid black;
   text-align: center;
@@ -96,17 +103,146 @@ nav ul li a:active{
 .stars {
   background: #219ebc;
   display: block;
-  
+
 }
 
-.contact p{
-margin: 0;
+.join {
+  text-align: center;
 }
 
+.contact p {
+  margin: 0;
+}
+
+.thanks {
+  text-align: center;
+  font-size: 16px;
+}
+
+.container1 {
+  margin-top: 20px;
+}
+
+fieldset {
+  background: #8ecae6;
+}
+
+.submitBtn {
+  background: #fb8500;
+  padding: 10px;
+  font-size: 20px;
+  margin: 20px;
+}
+
+section.contactus {
+  border: 1px solid black;
+  text-align: center;
+  background: #8ecae6;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+section.contactus p,
+h2 {
+  margin: 0;
+}
+
+.form2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div.map {
+  border: 1px solid black;
+}
+
+iframe.map {
+  width: 100%;
+}
+
+.members {
+  display: block;
+  margin: 10px;
+}
+
+.member {
+  text-align: center;
+  background: #8ecae6;
+  border: 1px solid black;
+  padding-top: 20px;
+}
+
+.member img {
+  border: 5px solid #ffb703;
+  text-align: center;
+}
+
+h2.members {
+  text-align: center;
+}
+
+section.member h4,
+p {
+  margin: 0;
+}
+
+.cards {
+  display: block;
+  text-align: center;
+
+}
+
+.cards section {
+  border: 2px solid #023047;
+  border-radius: 10px;
+  word-wrap: break-word;
+  font-size: 12px;
+  /* padding: 10px; */
+  background: #ffb703;
+
+}
+
+.cards section img {
+  max-width: 75px;
+}
+
+/* .icons{
+  display: none;
+} */
+
+.cta {
+  background: #8ecae6;
+  font-size: 20px;
+  padding: 25px;
+  margin: 25px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.button{
+  float: right;
+}
+
+.logo{
+  max-width: 50px;
+}
+.hero-ph img{
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+ 
+}
+.purpose {
+border: 1px solid black;
+padding: 10px;
+}
+
+/* MEDIUM  */
+/* MEDIUM  */
+/* MEDIUM  */
+/* MEDIUM  */
 
 
-
-@media only screen and (min_width: 35rem) {
+@media only screen and (min-width: 35em) {
 
   header,
   nav,
@@ -117,8 +253,64 @@ margin: 0;
     padding: 5px;
   }
 
+  .thanks {
+    font-size: 40px;
+  }
+
+  .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .cards section {
+    font-size: 14px;
+    width: 100%;
+
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  .fa {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .fa:hover {
+    color: black;
+    transition: .4s;
+  }
+
+.cta {
+  font-size: 40px;
 }
 
+.purpose {
+  border: 1px solid black;
+  padding: 20px;
+  }
+
+}
+
+/* LARGE */
+/* LARGE */
+/* LARGE */
+/* LARGE */
+/* LARGE */
+/* LARGE */
 
 @media only screen and (min-width: 64rem) {
 
@@ -131,5 +323,44 @@ margin: 0;
     padding: 5px;
   }
 
+  header {
+    font-size: 30px;
+  }
+
+  .navigation li:nth-child(1) {
+    display: none;
+  }
+
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .thanks {
+    font-size: 50px;
+  }
+
+  .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cta {
+    font-size: 75px;
+  }
+  .herodiv{
+    margin: 25px;
+   
+  }
+  .hero-ph img{
+    width: 100%;
+  }
+ 
 
 }

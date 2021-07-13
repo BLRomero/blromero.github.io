@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#8ecae6" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    
+
     <link rel="stylesheet" href="css/devine.css" />
     <script defer src="js/devine.js"></script>
 
@@ -30,6 +30,7 @@
       content="Devine Texas Chamber of Commerce, current events, weather, and board members"
     />
   </head>
+
   <body>
     <header class="clearfix">
       <h1>Devine Chamber of Commerce</h1>
@@ -43,16 +44,150 @@
           <li><a href="directory.html">Directory</a></li>
           <li><a href="joinus.html">Join Us</a></li>
           <li><a href="contact.html">Contact Info</a></li>
-          <!-- <li><a href="gallery.html">Gallery</a></li> -->
         </ul>
       </nav>
     </header>
     <main>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a>
+      <h2 class="members">2021 Board Members</h2>
+      <div class="members">
+        <section class="member">
+          <picture>
+            <source srcset="images/man_100.png" media="(max-width: 360px)"/>
+            <source srcset="images/man_100.png" media="(min-width: 361px) and (max-width: 560px)"/>
+            <source srcset="images/man_250.png" media="(min-width: 561px)"/>
+            <img src="images/man_250.png" alt="white man white shirt head shot"/>
+          </picture>
+          <h4>Marcus Buckner</h4>
+         <p> President <br />
+          Marken Media</p>
+        </section>
+
+        <section class="member">
+          <picture>
+            <source srcset="images/woman1_100.png" media="(max-width: 360px)"/>
+            <source srcset="images/woman1_100.png" media="(min-width: 361px) and (max-width: 560px)"/>
+            <source srcset="images/woman1_250.png" media="(min-width: 561px)"/>
+            <img src="images/woman1_250.png" alt="black woman arms crossed braids" />
+          </picture>
+          <h4>Margaret Greehey</h4>
+          <p>Vice President <br />
+            Mag's Place</p>
+        </section>
+
+        <section class="member">
+          <picture>
+            <source srcset="images/woman2_100.png" media="(max-width: 360px)"/>
+            <source srcset="images/woman2_100.png" media="(min-width: 361px) and (max-width: 560px)"/>
+            <source srcset="images/woman2_250.png" media="(min-width: 561px)"/>
+            <img src="images/woman2_250.png" alt="elderly lady wearing glasses smiling" />
+          </picture>
+          <h4>Sheryl Grego</h4>
+         <p> Secretary <br/>
+          Devine Golf Course</p>
+        </section>
+
+        <section class="member">
+          <picture>
+            <source srcset="images/woman3_100.png" media="(max-width: 560px)"/>
+            <source srcset="images/woman3_100.png" media="(min-width: 361px) and (max-width: 560px)"/>
+            <source srcset="images/woman3_250.png" media="(min-width: 561px)"/>
+            <img src="images/woman3_250.png" alt="middle aged woman shoulder length blinde hair black shirt" />
+          </picture>
+          <h4>Bonnie Ellen</h4>
+          <p>Treasurer</p>
+        </section>
+
+        <section class="member">
+          <picture>
+            <source srcset="images/woman4_100.png" media="(max-width: 360px)"/>
+            <source srcset="images/woman4_100.png" media="(min-width: 361px) and (max-width: 560px)"/>
+            <source srcset="images/woman4_250.png" media="(min-width: 561px)"/>
+            <img src="images/woman4_250.png" alt="younger woman long straight brown hair wearing purple dress"/>
+          </picture>
+          <h4>Sandy Herrera</h4>
+          <p> Member at Large <br/>
+            Lytle State Bank
+          </p>
+        </section>
+      </div>
+
+      <div>
+        <section class="contactus">
+          <h2>Contact Us</h2>
+          <p>PO Box 441</p>
+          <p>200 E Hondo Ave</p>
+          <p>Devine Texas 78016</p>
+          <p>Phone: 830-282-7960</p>
+        </section>
+      </div>
+
+      <form action="thanks2.html" class="form2">
+        <fieldset>
+          <legend><h3>Comments/Suggestions</h3></legend>
+          <label class="info"
+            >First Name*
+            <input
+              type="text"
+              name="Business Name"
+              pattern="[a-zA-Z][a-zA-Z\s]*{5,}"
+              required /></label
+          ><br />
+          <label class="info"
+            >Last Name*
+            <input
+              type="text"
+              name="Business Name"
+              pattern="[a-zA-Z][a-zA-Z\s]*{5,}"
+              required
+          /></label>
+          <br />
+          <label class="info"
+            >Phone
+            <input
+              type="tel"
+              name="phone"
+              placeholder="1234567890"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              size="10"
+          /></label>
+          <br />
+          <label>
+            Email*
+            <input
+              type="email"
+              placeholder="someone@somewhere.com"
+              required /></label
+          ><br />
+
+          <label class="add">
+            <textarea
+              name="comments"
+              cols="30"
+              rows="15"
+              placeholder="Leave any additional information or comments here"
+            ></textarea>
+          </label>
+        </fieldset>
+      </form>
+
+      <div class="map">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55756.086553097906!2d-98.9487736456141!3d29.142403915202202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c324dd98b0f5d%3A0xd35cb0c64918578c!2sDevine%2C%20TX%2078016!5e0!3m2!1sen!2sus!4v1626120462521!5m2!1sen!2sus"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </main>
 
     <footer>
+      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
+      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a
+      ><br />
       &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
       <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
       <br /><span id="currentdate"></span>

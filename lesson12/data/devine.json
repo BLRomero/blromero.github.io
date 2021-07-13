@@ -8,7 +8,8 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "830-663-9330",
-      "website": "https://americanmomentum.bank"
+      "website": "https://americanmomentum.bank",
+      "image":"images/AMB_stacked.jpg"
     },
 
     {
@@ -19,7 +20,8 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "2830-663-8101",
-      "website":"https://billybobshamburgers.com"
+      "website":"https://billybobshamburgers.com",
+      "image":"images/billybobs.jpg"
 
     },
     {
@@ -30,7 +32,8 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "830-931-7370",
-      "website":"https://www.facebook.com/Calame-Store-358311471530949/"
+      "website":"https://www.facebook.com/Calame-Store-358311471530949/",
+      "image":"#"
 
     },
     {
@@ -41,7 +44,8 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "210-452-1280",
-      "website":"https://www.devineback.com/"
+      "website":"https://www.devineback.com/",
+      "image":"images/devinechiro.png"
 
     },
     {
@@ -52,7 +56,8 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "830-663-5733",
-      "website":"https://www.felipestireshop.com/"
+      "website":"https://www.felipestireshop.com/",
+      "image":"images/felipes.png"
 
     },
     {
@@ -63,18 +68,20 @@
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "830-665-2807",
-      "website":"https://www.statefarm.com/agent/us/tx/devine/mark-kidd-35pqr1ys000"
+      "website":"https://www.statefarm.com/agent/us/tx/devine/mark-kidd-35pqr1ys000",
+      "image":"images/statefarm.png"
 
     },
     {
       "name": "Sandy Oaks Ranch",
-      "purpose": "events / hunting",
+      "purpose": "events/hunting",
       "address": "1480 IH 35 S",
       "city": "Devine",
       "state": "Texas",
       "zip":"78016",
       "phonenumber": "210-394-4857",
-      "website":"https://www.sandyoaksranch.com/"
+      "website":"https://www.sandyoaksranch.com/",
+      "image":"images/sandyoaks.jpg"
 
     }
    

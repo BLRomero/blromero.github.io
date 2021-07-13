@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#8ecae6" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    
+
     <link rel="stylesheet" href="css/devine.css" />
     <script defer src="js/devine.js"></script>
 
@@ -30,6 +30,7 @@
       content="Devine Texas Chamber of Commerce, current events, weather, and board members"
     />
   </head>
+
   <body>
     <header class="clearfix">
       <h1>Devine Chamber of Commerce</h1>
@@ -48,11 +49,329 @@
       </nav>
     </header>
     <main>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a>
+      <h2 class="join">Join the Devine Chamber of Commerce</h2>
+
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend><h3>Personal Information</h3></legend>
+
+          <label class=""
+            >Title:
+            <select name="title">
+              <option hidden>Please Select</option>
+              <option value="mr">Mr</option>
+              <option value="mrs">Mrs</option>
+              <option value="dr">Dr</option>
+              <option value="ms">Ms</option>
+              <option value="miss">Miss</option>
+            </select>
+          </label>
+          <label class="info"
+            >First Name*
+            <input
+              type="text"
+              name="Business Name"
+              pattern="[a-zA-Z][a-zA-Z\s]*{5,}"
+              required
+          /></label>
+          <label class="info"
+            >Last Name*
+            <input
+              type="text"
+              name="Business Name"
+              pattern="[a-zA-Z][a-zA-Z\s]*{5,}"
+              required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend><h3>Business Information</h3></legend>
+
+          <label class="info" maxlength="150" size="150"
+            >Business Name*
+            <input
+              type="text"
+              name="Business Name"
+              pattern="[a-zA-Z][a-zA-Z\s]*{5,}"
+              maxlength="100"
+              size="50"
+              required
+          /></label>
+          <br />
+          <label>Business Type:</label>
+          <select name="type">
+            <option hidden>Please Select</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="business">Business/Informatio</option>
+            <option value="construction">
+              Construction/Utilities/Contracting
+            </option>
+            <option value="educaation">Education</option>
+            <option value="finance">Finance/Insurance</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="health">Health Services</option>
+            <option value="motor">Motor Vehicle</option>
+            <option value="natural">Natural Rescources/Enviornmental</option>
+            <option value="personal">Personal Services</option>
+            <option value="retail">Retail</option>
+            <option value="realestate">Real Estate/Housing</option>
+            <option value="safety">Safety/Security</option>
+            <option value="transport">Transportation</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div class="container1">
+            <div class="panel panel-primary">
+              <label class="control-label">Business address</label>
+              <input
+                class="form-control"
+                id="street_number"
+                maxlength="100"
+                size="50"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label class="control-label">City</label>
+                <input
+                  class="form-control field"
+                  id="locality"
+                  maxlength="20"
+                  size="20"
+                />
+                <label class="control-label">State</label>
+                <input
+                  class="form-control"
+                  id="administrative_area_level_1"
+                  maxlength="2"
+                  size="2"
+                />
+                <label class="control-label">Zip code</label>
+                <input
+                  class="form-control"
+                  id="postal_code"
+                  maxlength="5"
+                  size="5"
+                />
+              </div>
+            </div>
+
+        <br>
+            <div class="panel panel-primary">
+              <label class="control-label">Mailing address</label>
+              <input
+                class="form-control"
+                id="street_number"
+                maxlength="100"
+                size="50"
+              />
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label class="control-label">City</label>
+                <input
+                  class="form-control field"
+                  id="locality"
+                  maxlength="20"
+                  size="20"
+                />
+                <label class="control-label">State</label>
+                <input
+                  class="form-control"
+                  id="administrative_area_level_1"
+                  maxlength="2"
+                  size="2"
+                />
+                <label class="control-label">Zip code</label>
+                <input
+                  class="form-control"
+                  id="postal_code"
+                  maxlength="5"
+                  size="5"
+                />
+              </div>
+            </div>
+            <br />
+            <label>
+              Website
+              <input
+                type="email"
+                placeholder="https://someone.com"
+                maxlength="40"
+                size="40" /></label
+                required
+            ><br />
+            <label>
+              Email*
+              <input
+                type="email"
+                placeholder="someone@somewhere.com"
+                maxlength="40"
+                size="40" /></label
+                required
+            ><br />
+
+            <label class="info"
+              >Business Phone*
+              <input
+                type="tel"
+                name="phone"
+                placeholder="1234567890"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                size="10"
+                required
+            /></label>
+            <label class="info">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="extension"
+                pattern="[0-9]{10}"
+                maxlength="5"
+                size="5"
+           
+            /></label>
+
+            <label class="info"
+              >Cell
+              <input
+                type="tel"
+                name="phone"
+                placeholder="1234567890"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                size="10"
+              
+            /></label>
+            <label class="info"
+              >Fax
+              <input
+                type="tel"
+                name="phone"
+                placeholder="1234567890"
+                pattern="[0-9]{10}"
+                maxlength="10"
+                size="10"
+               
+            /></label>
+            <p>Preferred Method of Communication</p>
+            <label class="method"
+              ><input type="radio" name="contact" value="email" />Email</label>
+            <label class="contact"
+              ><input type="radio" name="contact" value="fax" />Fax</label>
+            <label class="contact"
+              ><input type="radio" name="contact" value="text" />Mail</label>
+
+            <br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><h3>Membership Options</h3></legend>
+          <label class="membership"
+          ><input type="radio" name="opts" /><strong>Non-Profit $100/year</strong> directory listing, quarterly social media & marquee adverstising, 2 luncheon tickets, newsletter </label>
+         <br>
+          <label class="membership"
+          ><input type="radio" name="opts" /><strong>Bronze $200/year</strong> directory listing, quarterly social media & marquee adverstising, 2 luncheon tickets</label>
+        <br>
+          <label class="membership"
+          ><input type="radio" name="opts" /><strong>Silver $400/year</strong> directory listing, monthly social media & marquee adverstising, 4 luncheon tickets,  newsletter
+         </label>
+         <br>
+          <label class="membership"
+          ><input type="radio" name="opts" /><strong>Gold $1000/year</strong> directory listing, weekly social media & daily marquee adverstising, 10 luncheon tickets, newsletter
+         </label>
+          
+        </fieldset>
+
+
+
+        <fieldset>
+          <legend><h3>Billing Information</h3></legend>
+
+         
+          <label class="cctype"
+            ><input type="radio" name="contact" value="mc" />Mastercard</label>
+          <label class="cctype"
+            ><input type="radio" name="contact" value="visa" />Visa</label>
+          <label class="cctype"
+            ><input type="radio" name="contact" value="amx" />American Express</label>
+          <label class="cctype"
+            ><input type="radio" name="contact" value="disc" />Discover</label>
+         <br>
+
+         
+         <div class="creditCardForm">
+          
+          <div class="payment">
+              <form>
+                  <div class="form-group owner">
+                      <label for="owner">Name on Card</label>
+                      <input type="text" class="form-control" id="owner">
+                  </div>
+                  
+                  <div class="form-group" id="card-number-field">
+                      <label for="cardNumber">Card Number</label>
+                      <input type="text" class="form-control" id="cardNumber">
+                  </div>
+                  <div class="form-group CVV">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" maxlength="3"
+                    size="3">
+                </div>
+                  <div class="form-group" id="expiration-date">
+                      <label>Expiration Date</label>
+                      <select>
+                          <option value="01">January</option>
+                          <option value="02">February </option>
+                          <option value="03">March</option>
+                          <option value="04">April</option>
+                          <option value="05">May</option>
+                          <option value="06">June</option>
+                          <option value="07">July</option>
+                          <option value="08">August</option>
+                          <option value="09">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                      </select>
+                      <select>
+                          <option value="21"> 2021</option>
+                          <option value="22"> 2022</option>
+                          <option value="23"> 2023</option>
+                          <option value="24"> 20241</option>
+                          <option value="25"> 2025</option>
+                      </select>
+                  </div>
+                 
+                  </div>
+                  
+         
+          </div>
+      </div>
+        </fieldset>
+
+       
+
+        <input class="submitBtn" type="submit" value="Submit Application" />
+      </form>
     </main>
 
     <footer>
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p>PO Box 441</p>
+        <p>200 E Hondo Ave</p>
+        <p>Devine Texas 78016</p>
+        <p>Phone: 830-282-7960</p>
+      </section>
+
+      <a href=" #">Facebook</a>
+      <a href=" #">Twitter</a><br />
       &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
       <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
       <br /><span id="currentdate"></span>

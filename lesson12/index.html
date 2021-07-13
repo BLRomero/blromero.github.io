@@ -24,7 +24,12 @@
     <link rel="stylesheet" href="css/devine.css" />
     <!-- <link rel="stylesheet" href="css/normalization.css"> -->
     <script defer src="js/devine.js"></script>
-
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete" async ></script>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEFcpqvYLg3MxMEbfm5ve8nmzBWJI9ABI&libraries=places&callback=initAutocomplete" async ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="auto-complete.js"></script>
     <title>Devine Texas Chamber Of Commerce</title>
     <meta
       name="description"
@@ -36,7 +41,7 @@
     <header class="clearfix">
       
       <h1>Devine Chamber of Commerce</h1>
-      <img src="images/texas.jpg" alt="texas with a heart and Devine inside">
+      <img  class="logo" src="images/texas.png" alt="texas with a heart and Devine inside">
       <p>Small town with a big heart ❤</p>
       
       <nav class="clearfix">
@@ -52,73 +57,65 @@
       </nav>
     </header>
     <main>
-      <section>
+      <div class="weathersummary" >
+        
+          <h2>Weather Summary</h2>
+          <p><img id="icon" src="#" alt="" /></p>
+          <p>Current Temperature: <span class="currentTemp"></span>&#176;F</p>
+
+          <p><span class="description"></span></p>
+                   <p>Humidity: <span class="humidity"></span>%</p>
+           
+          <p><span id="imagesrc"></span> &nbsp; <img src="#" alt="" /></p>
+      </div>
+      
+   
+    <br />
+      <section class="purpose">
+        <div class="button"><button type="button" class="cta"><a href="joinus.html">Join Today!!</a></button></div>
         <h2>Purpose</h2>
         <p>  The Devine Chamber of Commerce is local businesses united for the betterment of all citizens of Devine Texas.  We join together to encourage all to buy local, get involved in hosting events, charitable works, improve the quality of life, and contribute to the economic stability of the community </p>
         
-        <h2>Goals:</h2>
-        <p>Economic Stability</p>
-        <p>Increased Quality of Life </p>
-        <p>Community Involvement</p>
+        <h2>Goals</h2>
+        <ul>
+          <li>Economic Stability</li>
+          <li>Increase Quality of LIfe</li>
+          <li>Community Involvement</li>
+        </ul>
         
       </section>
-     <div class="whole">
-      <div class="herodiv">
-        <picture class="hero-ph">
-          <!-- <source srcset="images/roundbales360.jpeg" media="(min-width: 180px) and (max-width: 360px)" />
-          <source srcset="images/roundbales560.jpeg" media="(min-width: 361px) and (max-width: 558px)" />
-          <source srcset="images/roundbales960.jpeg" media="(min-width: 561px)" /> -->
-          <img
-            src="images/texasflag600x900.jpg"
-            alt="scattered round hay bales in a yellow field "
-          />
-        </picture>
-</div>
-<div>
-        <section class="weathersummary">
-          <div class="weathersummary">
-            <h2>Weather Summary</h2>
 
-            <p><img id="icon" src="#" alt="" /></p>
-
-            <p>
-              Current Temperature: <span class="currentTemp"></span>&#176; F
-            </p>
-            <p><span class="description"></span></p>
-            <p>Humidity: <span class="humidity"></span>%</p>
-            <p><span id="imagesrc"></span> &nbsp; <img src="#" alt="" /></p>
+        
+          <div class="forecast">
+            <h2>3 Day Forecast</h2>
+  
+            <table>
+              <tr>
+                <th><span id="dayofweek2"></span></th>
+                <th><span id="dayofweek3"></span></th>
+                <th class="last"><span id="dayofweek4"></span></th>
+              </tr>
+              <tr>
+                <td>
+                  <p><img id="icon2" src="#" alt="" /></p>
+                </td>
+                <td>
+                  <p><img id="icon3" src="#" alt="" /></p>
+                </td>
+                <td class="last">
+                  <p><img id="icon4" src="#" alt="" /></p>
+                </td>
+              </tr>
+              <tr>
+                <td><span id="forecast2"></span>&deg;F</td>
+                <td><span id="forecast3"></span>&deg;F</td>
+                <td class="last"><span id="forecast4"></span>&deg;F</td>
+              </tr>
+            </table>
           </div>
-        </section>
-      </div>
-      <br />
-      <div class="forecast">
-        <h2>3 Day Forecast</h2>
+         </div>
+</div>
 
-        <table>
-          <tr>
-            <th><span id="dayofweek2"></span></th>
-            <th><span id="dayofweek3"></span></th>
-            <th class="last"><span id="dayofweek4"></span></th>
-          </tr>
-          <tr>
-            <td>
-              <p><img id="icon2" src="#" alt="" /></p>
-            </td>
-            <td>
-              <p><img id="icon3" src="#" alt="" /></p>
-            </td>
-            <td class="last">
-              <p><img id="icon4" src="#" alt="" /></p>
-            </td>
-          </tr>
-          <tr>
-            <td><span id="forecast2"></span>&deg;F</td>
-            <td><span id="forecast3"></span>&deg;F</td>
-            <td class="last"><span id="forecast4"></span>&deg;F</td>
-          </tr>
-        </table>
-      </div>
-     </div>
 
       <br />
 
@@ -128,11 +125,12 @@
        </section>
       </div>
 
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a>
+      
     </main>
 
     <footer>
+      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a> 
+      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a>
       <section class="contact">
         <p>Contact Us</p>
         <p>PO Box 441</p>
@@ -141,10 +139,16 @@
         <p>Phone: 830-282-7960</p>
       </section>
 
-      &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
-      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
-      <br /><span id="currentdate"></span>
-      <p>You last visited <span class="days"></span> days ago</p>
-    </footer>
+ 
+        <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
+        <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a><br>
+        &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
+        <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+        <br /><span id="currentdate"></span>
+        <p>You last visited <span class="days"></span> days ago</p>
+      </footer>
+    </body>
+  </html>
+  
   </body>
 </html>

@@ -197,13 +197,7 @@ div.gallery figure {
   background: linear-gradient(#457b9d, #a8dadc, #457b9d);
 }
 
-/* .gallery  {
-  filter:blur(0em);
-  transition:filter 2s;
-} */
-/* .gallery img[data-src]{
-  filter:blur(1em);
-} */
+
 
 /* ----------------------FOOTER------------------ */
 
@@ -227,17 +221,8 @@ footer img {
 
 
 
-/* Set a specific color for each brand */
-
-
-
-
 /* ------------STORM CENTER---------------- */
-/* 
-.slider:hover {
-  opacity: 1;
- 
-} */
+
 
 form fieldset {
   margin: 2rem 0;

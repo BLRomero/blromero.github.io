@@ -20,8 +20,10 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="theme-color" content="#8ecae6" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+   
     
     <link rel="stylesheet" href="css/devine.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script defer src="js/devine.js"></script>
 
     <title>Devine Texas Chamber Of Commerce</title>
@@ -45,20 +47,35 @@
           <li><a href="contact.html">Contact Info</a></li>
           <!-- <li><a href="gallery.html">Gallery</a></li> -->
         </ul>
+        <div class="icons">
+          <i class="fas fa-list-ul" onclick="full()"></i>
+        <i class="fas fa-th" onclick="list()"></i>
+        </div>
       </nav>
     </header>
     <main>
 
-      <div class='cards'>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
-      <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a>
+      <div class='cards' id="cards">
+
+</div>
     </main>
 
-    <footer>
-      &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
-      <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
-      <br /><span id="currentdate"></span>
-      <p>You last visited <span class="days"></span> days ago</p>
-    </footer>
+    <f<footer>
+      <section class="contact">
+        <p>Contact Us</p>
+        <p>PO Box 441</p>
+        <p>200 E Hondo Ave</p>
+        <p>Devine Texas 78016</p>
+        <p>Phone: 830-282-7960</p>
+      </section>
+
+ 
+        <a href=" https://www.facebook.com/DevineChamberofCommerce/">Facebook</a>
+        <a href=" https://www.facebook.com/DevineChamberofCommerce/">Twitter</a><br>
+        &copy;<span id="year"></span> | Bonnette Romero | Texas USA |
+        <a href="https://www.byui.edu/online">BYU-I Online Learning</a>
+        <br /><span id="currentdate"></span>
+        <p>You last visited <span class="days"></span> days ago</p>
+      </footer>
   </body>
 </html>
