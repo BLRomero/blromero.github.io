@@ -34,10 +34,10 @@
   <body>
     <header class="clearfix">
       <h1>Devine Chamber of Commerce</h1>
-      <!-- <img src="images/weathericon.webp" alt="logo, thermometer, sun, white clouds, blue sky" /> -->
+      <img  class="logo" src="images/texas.png" alt="texas with a heart and Devine inside">
       <h2>Small town with a big heart ❤</h2>
       <nav class="clearfix">
-        <ul class="navigation active">
+        <ul class="navigation">
           <li><a class="ham" href="#">&#9776; Menu</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="devine.html">Devine</a></li>
@@ -55,8 +55,7 @@
         <fieldset>
           <legend><h3>Personal Information</h3></legend>
 
-          <label class=""
-            >Title:
+          <label>Title:
             <select name="title">
               <option hidden>Please Select</option>
               <option value="mr">Mr</option>
@@ -106,7 +105,7 @@
             <option value="construction">
               Construction/Utilities/Contracting
             </option>
-            <option value="educaation">Education</option>
+            <option value="education">Education</option>
             <option value="finance">Finance/Insurance</option>
             <option value="hospitality">Hospitality</option>
             <option value="manufacturing">Manufacturing</option>
@@ -122,149 +121,57 @@
           </select>
 
           <div class="container1">
-            <div class="panel panel-primary">
-              <label class="control-label">Business address</label>
-              <input
-                class="form-control"
-                id="street_number"
-                maxlength="100"
-                size="50"
-              />
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <label class="control-label">City</label>
-                <input
-                  class="form-control field"
-                  id="locality"
-                  maxlength="20"
-                  size="20"
-                />
-                <label class="control-label">State</label>
-                <input
-                  class="form-control"
-                  id="administrative_area_level_1"
-                  maxlength="2"
-                  size="2"
-                />
-                <label class="control-label">Zip code</label>
-                <input
-                  class="form-control"
-                  id="postal_code"
-                  maxlength="5"
-                  size="5"
-                />
-              </div>
-            </div>
+            <label class="control-label">Business address</label>
+            <input id="street_number" maxlength="100" size="50"/>
+            <label class="control-label">City</label>
+            <input id="locality" maxlength="20" size="20"/>
+            <label >State</label>
+            <input maxlength="2" size="2"/>
+            <label >Zip code</label>
+            <input  maxlength="5" size="5" />
+          </div>
 
         <br>
-            <div class="panel panel-primary">
-              <label class="control-label">Mailing address</label>
-              <input
-                class="form-control"
-                id="street_number"
-                maxlength="100"
-                size="50"
-              />
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <label class="control-label">City</label>
-                <input
-                  class="form-control field"
-                  id="locality"
-                  maxlength="20"
-                  size="20"
-                />
-                <label class="control-label">State</label>
-                <input
-                  class="form-control"
-                  id="administrative_area_level_1"
-                  maxlength="2"
-                  size="2"
-                />
-                <label class="control-label">Zip code</label>
-                <input
-                  class="form-control"
-                  id="postal_code"
-                  maxlength="5"
-                  size="5"
-                />
-              </div>
+            <div >
+              <label >Mailing address</label>
+              <input maxlength="100" size="50" />
+              <label >City</label>
+              <input maxlength="20"size="20"/>
+              <label >State</label>
+              <input maxlength="2" size="2"/>
+              <label>Zip code</label>
+              <input maxlength="5" size="5"/>
             </div>
             <br />
             <label>
               Website
-              <input
-                type="email"
-                placeholder="https://someone.com"
-                maxlength="40"
-                size="40" /></label
-                required
-            ><br />
+              <input type="email" placeholder="https://someplace.com" maxlength="40" size="40" /></label>
+            <br />
             <label>
               Email*
-              <input
-                type="email"
-                placeholder="someone@somewhere.com"
-                maxlength="40"
-                size="40" /></label
-                required
-            ><br />
+              <input type="email" placeholder="someone@somewhere.com" maxlength="40" size="40" /></label >
+              <br />
 
-            <label class="info"
-              >Business Phone*
-              <input
-                type="tel"
-                name="phone"
-                placeholder="1234567890"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                size="10"
-                required
-            /></label>
+            <label class="info">Business Phone*
+              <input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10" size="10" required/></label>
             <label class="info">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="extension"
-                pattern="[0-9]{10}"
-                maxlength="5"
-                size="5"
-           
-            /></label>
+              <input type="tel" name="phone"  placeholder="extension" pattern="[0-9]{10}" maxlength="5"  size="5" /></label>
 
-            <label class="info"
-              >Cell
-              <input
-                type="tel"
-                name="phone"
-                placeholder="1234567890"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                size="10"
-              
-            /></label>
-            <label class="info"
-              >Fax
-              <input
-                type="tel"
-                name="phone"
-                placeholder="1234567890"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                size="10"
-               
-            /></label>
-            <p>Preferred Method of Communication</p>
-            <label class="method"
-              ><input type="radio" name="contact" value="email" />Email</label>
-            <label class="contact"
-              ><input type="radio" name="contact" value="fax" />Fax</label>
-            <label class="contact"
-              ><input type="radio" name="contact" value="text" />Mail</label>
+            <label class="info" >Cell
+              <input type="tel"  name="phone" placeholder="1234567890" pattern="[0-9]{10}" maxlength="10"  size="10"/></label>
+            
+              <label class="info" >Fax
+              <input type="tel"  name="phone"  placeholder="1234567890" pattern="[0-9]{10}"
+              maxlength="10" size="10"/></label>
+           
+              <p>Preferred Method of Communication</p>
+           
+            <label class="method">
+              <input type="radio" name="contact" value="email" />Email</label>
+            <label class="contact">
+              <input type="radio" name="contact" value="fax" />Fax</label>
+            <label class="contact"> 
+              <input type="radio" name="contact" value="text" />Mail</label>
 
             <br />
           </div>

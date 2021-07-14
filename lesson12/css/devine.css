@@ -74,6 +74,13 @@ nav ul li a:active {
 .responsive li {
   display: block;
 }
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
 
 /* .herodiv img:nth-child(1){
   float: left;
@@ -87,23 +94,23 @@ nav ul li a:active {
   text-align: center;
   color: black;
   font-size:16px;
+  margin: 20px;
  }
 
  .weathersummary {
    background-image: url(../images/roundbales960.jpg);
-   }
+    background-repeat: no-repeat;
+   background-size: cover;
+ }
 
 .forecast {
-  background: #fb8500;
-  border: 1px solid black;
-  text-align: center;
-  padding: 0.5rem;
+  display: none;
 }
 
-.stars {
-  background: #219ebc;
-  display: block;
-
+.starsinfo div {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
 }
 
 .join {
@@ -212,9 +219,9 @@ p {
 
 .cta {
   background: #8ecae6;
-  font-size: 20px;
-  padding: 25px;
-  margin: 25px;
+  font-size:16px;
+  padding: 10px;
+
   font-weight: bold;
   border-radius: 25px;
 }
@@ -223,7 +230,8 @@ p {
 }
 
 .logo{
-  max-width: 50px;
+  max-width: 60px;
+  margin: 10px;
 }
 .hero-ph img{
   margin: 0;
@@ -233,7 +241,40 @@ p {
 }
 .purpose {
 border: 1px solid black;
-padding: 10px;
+padding: 20px;
+background: #ffb703;
+
+}
+
+.stars div {
+  display: block;
+  border-radius: 25px;
+   } 
+.starsinfo div{
+  display: block;
+  text-align: center;
+  } 
+
+.starsinfo div:nth-child(1){
+    background-image: url(../images/desk.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.starsinfo div:nth-child(2){
+    background-image: url(../images/spine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.starsinfo div:nth-child(3){
+    background-image: url(../images/tires.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    color: white;
 }
 
 /* MEDIUM  */
@@ -295,12 +336,27 @@ padding: 10px;
   }
 
 .cta {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .purpose {
   border: 1px solid black;
   padding: 20px;
+ 
+  }
+  .forecast {
+    display: grid;
+    background: #fb8500;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5rem;
+    max-width: 33%;
+   margin: 0 auto 0 auto;
+   padding: 20px;
+  }
+  .logo{
+    max-width: 80px;
+    margin: 15px;
   }
 
 }
@@ -336,6 +392,13 @@ padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
+  nav ul li:last-child a {
+    border: none;
+  }
+  .navigation li {
+    display: block;
+  }
+
   .thanks {
     font-size: 50px;
   }
@@ -352,7 +415,7 @@ padding: 10px;
   }
 
   .cta {
-    font-size: 75px;
+    font-size: 40px;
   }
   .herodiv{
     margin: 25px;
@@ -361,6 +424,19 @@ padding: 10px;
   .hero-ph img{
     width: 100%;
   }
+
+ .stars div{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   }
  
+.starsinfo div{
+  display: block;
+}
+.logo{
+  max-width: 100px;
+  margin: 25px;
+}
+
 
 }

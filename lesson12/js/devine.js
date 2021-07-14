@@ -3,13 +3,9 @@ const hambutton = document.querySelector(".ham");
 
 const mainnav = document.querySelector(".navigation");
 
-hambutton.addEventListener('click', () => {
-  mainnav.classList.toggle("responsive")
-}, false);
+hambutton.addEventListener('click', () => {mainnav.classList.toggle("responsive")}, false);
 
-window.onresize = () => {
-  if (window.innerWidth > 760) mainnav.classList.remove("responsive")
-};
+window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove("responsive")};
 
 
 
@@ -67,34 +63,40 @@ fetch(apiurl)
   });
 
 
-//3 Day Forecast  ***********NEED TO FIX**********
-// const lat = '29.14';
-// const lon = '-98.9053';
+// 3 Day Forecast 
+const latitude1 = '29.14';
+const longitude1 = '-98.9053';
+const cityidsf = "4829208";
+const APPIDsf = "17ae5c140fafbe607c5caf358df91955";
+// api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
+const apiurlsf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidsf}&APPID=${APPIDsf}&units=imperial`;
 
-// APIID ='bedda6c15123f002141cc2835427f5c0'
+fetch(apiurlsf)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
 
-// const apiurl3 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly&appid=${APIID}&units=imperial`;
+    let day = 0;
+    const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-// fetch(apiurl3)
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     // console.log(jsObject);
+    const fivedayforecast = jsObject.list.filter((forecast) => forecast.dt_txt.includes("18:00:00"));
+    // console.log(fivedayforecast);
 
-//     let day = 0;
-//     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    fivedayforecast.forEach(x => {
+      let d = new Date(x.dt_txt);
+      day++;
+      // console.log(d);
 
-//     const daily = jsObject.daily;
-//     console.log(daily);
-
-//     for (let i=0; i < daily.length; i++){
-     
-//       document.getElementById(`dayofweek${day +1}`).textContent = dayofweek[d.getDay()];
-//       document.getElementById(`forecast${day +1}`).textContent = i.temp.max.toFixed();
-
-//       document.getElementById(`icon${day +1}`).src ="https://openweathermap.org/img/w/" + weather[0].icon + ".png";
-    
+      document.getElementById(`dayofweek${day +1}`).textContent = dayofweek[d.getDay()];
       
-//     }});
+      document.getElementById(`forecast${day +1}`).textContent = x.main.temp.toFixed();
+
+      document.getElementById(`icon${day +1}`).src ="https://openweathermap.org/img/w/" + x.weather[0].icon + ".png";
+      // document.getElementById(`sicon${day +1}`).src = `https://openweathermap.org/img/w/${jsObject.weather[0].description}.png`;
+    
+    })
+  });
+
 
 
 // business directory
@@ -321,74 +323,6 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 images.forEach(image => {
   imgObserver.observe(image);
 });
-// google maps geolocation autocomplete
-var placeSearch, autocomplete;
-  var componentForm = {
-    street_number: 'short_name',
-    route: 'long_name',
-    locality: 'long_name',
-    administrative_area_level_1: 'short_name',
-    country: 'long_name',
-    postal_code: 'short_name'
-  };
-
-function initAutocomplete() {
-  // Create the autocomplete object, restricting the search to geographical
-  // location types.
-  autocomplete = new google.maps.places.Autocomplete(
-    /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
-    {types: ['geocode']});
-
-  // When the user selects an address from the dropdown, populate the address
-  // fields in the form.
-  autocomplete.addListener('place_changed', fillInAddress);
-}
-
-function fillInAddress() {
-  // Get the place details from the autocomplete object.
-  var place = autocomplete.getPlace();
-
-  for (var component in componentForm) {
-    document.getElementById(component).value = '';
-    document.getElementById(component).disabled = false;
-  }
-
-  // Get each component of the address from the place details
-  // and fill the corresponding field on the form.
-  for (var i = 0; i < place.address_components.length; i++) {
-    var addressType = place.address_components[i].types[0];
-    if (componentForm[addressType]) {
-      var val = place.address_components[i][componentForm[addressType]];
-      document.getElementById(addressType).value = val;
-    }
-  }
-}
-
-// Bias the autocomplete object to the user's geographical location,
-// as supplied by the browser's 'navigator.geolocation' object.
-function geolocate() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var geolocation = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      var circle = new google.maps.Circle({
-        center: geolocation,
-        radius: position.coords.accuracy
-      });
-      autocomplete.setBounds(circle.getBounds());
-    });
-  }
-}
-
-
-
-
-//  google api for embedded maps and autofill
-// AIzaSyCEFcpqvYLg3MxMEbfm5ve8nmzBWJI9ABI
-
-
 
 
 function full(){
