@@ -217,11 +217,10 @@ p {
   display: none;
 } */
 
-.cta {
+#cta {
   background: #8ecae6;
   font-size:16px;
   padding: 10px;
-
   font-weight: bold;
   border-radius: 25px;
 }
@@ -335,7 +334,7 @@ background: #ffb703;
     transition: .4s;
   }
 
-.cta {
+#cta {
   font-size: 30px;
 }
 
@@ -414,7 +413,7 @@ background: #ffb703;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .cta {
+  #cta {
     font-size: 40px;
   }
   .herodiv{
