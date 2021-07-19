@@ -217,15 +217,21 @@ p {
   display: none;
 } */
 
-#cta {
+form#cta {
   background: #8ecae6;
   font-size:16px;
   padding: 10px;
   font-weight: bold;
-  border-radius: 25px;
-}
-.button{
+  border-radius: 15px;
   float: right;
+  border: 1px solid black;
+}
+
+form input{
+  border: none;
+  background-color: #8ecae6;
+  font-weight: bolder;
+  
 }
 
 .logo{
@@ -273,7 +279,7 @@ background: #ffb703;
      background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    color: white;
+    color: yellow;
 }
 
 /* MEDIUM  */
