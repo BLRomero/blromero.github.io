@@ -1,5 +1,3 @@
-
-
 // count
 
 // For use in converting milliseconds to seconds
