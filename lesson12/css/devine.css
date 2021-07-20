@@ -53,6 +53,15 @@ nav ul {
   text-decoration: none;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 14px;
+  list-style-type: none;
+}
+/*  */
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 nav ul li a:visited {
@@ -67,27 +76,20 @@ nav ul li a:active {
   background: #ffb703;
 }
 
-.navigation li {
-  list-style: none;
-}
 
-.responsive li {
-  display: block;
-}
 .navigation li:first-child {
   display: block;
 }
 
 .navigation li {
   display: none;
+  list-style: none;
 }
 
-/* .herodiv img:nth-child(1){
-  float: left;
-  border: 2px solid black;
-  max-width: 360px; 
-  width: 25%;
-} */
+.responsive li {
+  display: block;
+}
+
 
 .weathersummary {
    border: 1px solid black;
@@ -213,9 +215,9 @@ p {
   max-width: 75px;
 }
 
-/* .icons{
+.icons {
   display: none;
-} */
+}
 
 form#cta {
   background: #8ecae6;
@@ -328,23 +330,26 @@ background: #ffb703;
     width: 100%;
 
   }
-
-  .icons {
-    display: grid;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+.icons{
+  display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0;
-  }
+  
+}
+button {
+  background: #8ecae6;
+  border: none;
+}
+.column{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
 
-  .fa {
-    font-size: 25px;
-    cursor: pointer;
-    color: #fff;
-  }
-
-  .fa:hover {
-    color: black;
-    transition: .4s;
-  }
 
 #cta {
   font-size: 30px;

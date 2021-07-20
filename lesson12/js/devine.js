@@ -74,7 +74,7 @@ const apiurlsf = `https://api.openweathermap.org/data/2.5/forecast?id=${cityidsf
 fetch(apiurlsf)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
 
     let day = 0;
     const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -263,73 +263,21 @@ fetch(jsonfile3)
   });
 
 
-// // count
+// grid-view  list-view
+var elements =document.getElementsByClassName("column");
 
-// // For use in converting milliseconds to seconds
-// const ONESECOND = 1000;
-// const convert = 60 * 60 * 24 * ONESECOND;
-// // Obtain current time
-// let today = new Date();
-// let currentTime = today.getTime();
-// console.log(currentTime);
+var i;
 
-// // If there is no "lastvisited" data in local storage, set it to current time
-// if (!localStorage.getItem('lastvisited')) {
-//   localStorage.setItem('lastvisited', currentTime);
-// }
-
-// // Store the last-visited time in a variable
-// var lastTime = parseInt(localStorage.getItem('lastvisited'));
-// console.log(lastTime);
-
-// // Subtract current time with last-visited time and convert to seconds
-// var days = (currentTime - lastTime) / convert;
-
-// // // Display to the console how many seconds since last page visit
-// console.log("You last visited " + days.toFixed(0) + "  days ago.");
-
-// document.querySelector('.days').innerHTML = days.toFixed(0);
-
-
-
-// Lazy Load images
-
-const images = document.querySelectorAll('img[data-src]');
-
-
-function preloadImage(img) {
-  const src = img.getAttribute("data-src");
-  if (!src) {
-    return;
+// listView
+function listView() {
+  for (i=0; i< elements.length; i++) {
+    elements[i].style.width = "100%";
   }
-
-  img.src = src;
 }
 
-const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px -500px 0px"
-};
-
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      preloadImage(entry.target);
-      imgObserver.unobserve(entry.target);
-    }
-  });
-}, imgOptions);
-
-images.forEach(image => {
-  imgObserver.observe(image);
-});
-
-
-function full(){
-  document.getElementById('cards').style.width= '100%';
-}
-function list(){
-  document.getElementById('cards').style.width = "33%"
+//  grid view
+function gridView() {
+  for (i=0; i< elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
 }
